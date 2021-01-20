@@ -1,0 +1,48 @@
+@media only screen and (max-width: 500px) {
+
+#homePage {
+    display: flex;
+    z-index: -1;
+    position: absolute;
+    margin-top: 6vh;
+    width: 92vw;
+    height: 80vh;
+    padding-left: 4vw;
+    background-color:#881A9A;
+    border: none;
+    outline: none;
+}
+
+.left-div {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    background-color: #881A9A;
+    justify-content: space-around;
+    border: none !important;
+    outline: none !important;
+    width: 48vw;
+}
+
+.right-div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-around;
+    background-color: black;
+    border: none !important;
+    outline: none !important;
+    width: 50vw;
+}
+
+.text-left {
+    color: white;
+    font-size: 4rem;    
+}
+
+.text-right {
+    color: #881A9A;
+    font-size: 4rem;
+}
+
+}

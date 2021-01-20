@@ -1,0 +1,29 @@
+@media only screen and (max-width: 500px) {
+
+.quien-page {
+    background-color: #BA2F11;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    z-index: -1;
+    position: absolute;
+    margin-top: 6vh;
+    width: 100vw;
+    height: 80vh;
+    border: none;
+    outline: none;
+}
+
+.quien-title {
+    color: #fafafa;
+    font-size: 1.3rem;
+    margin: 0 0 0 2vw;
+}
+
+.quien-text {
+    color: #9D9C9C;
+    font-size: 1.4rem;
+    margin: 1vh 4vw 8vh 3vw;
+}
+
+}

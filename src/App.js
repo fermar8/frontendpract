@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
 import Navbar from './components/Navbar'
 import {Switch, Router, Route, Link} from 'react-router-dom'
-import Home from './pages/Home'
-import About from './pages/QuienesSomos';
+import Home from './pages/Home';
 import './App.css';
 
 class App extends Component {
@@ -13,7 +12,6 @@ class App extends Component {
 
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route exact path='/nosotros' component={About}/>
         </Switch>
     </div>
   );

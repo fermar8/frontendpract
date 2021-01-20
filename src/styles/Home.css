@@ -1,16 +1,15 @@
 @media only screen and (max-width: 500px) {
 
-#homePage {
+.homePage {
     display: flex;
     z-index: -1;
-    position: absolute;
-    margin-top: 6vh;
-    width: 92vw;
-    height: 80vh;
-    padding-left: 4vw;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
     background-color:#881A9A;
     border: none;
     outline: none;
+    transition: opacity .1s ease;
 }
 
 .left-div {
@@ -21,7 +20,7 @@
     justify-content: space-around;
     border: none !important;
     outline: none !important;
-    width: 48vw;
+    width: 50vw;
 }
 
 .right-div {

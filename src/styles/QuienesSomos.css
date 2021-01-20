@@ -5,25 +5,26 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    position: relative;
     z-index: -1;
-    position: absolute;
-    margin-top: 6vh;
+    margin-top: vh;
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
     border: none;
     outline: none;
 }
 
 .quien-title {
     color: #fafafa;
-    font-size: 1.3rem;
+    font-size: 2rem;
     margin: 0 0 0 2vw;
 }
 
 .quien-text {
     color: #9D9C9C;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin: 1vh 4vw 8vh 3vw;
 }
+
 
 }

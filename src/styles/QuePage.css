@@ -1,0 +1,40 @@
+@media only screen and (max-width: 500px) {
+
+.que-page {
+     background-color: black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    z-index: -1;
+    margin-top: 6vh;
+    width: 100vw;
+    height: 88vh;
+    border: none;
+    outline: none;
+    }
+
+.que-title {
+    color: #4F64D3;
+    font-size: 2rem;
+    margin: 0 0 0 2vw;
+    }
+    
+.que-row {
+    display: flex;
+}
+
+.que-text {
+    color: #9D9C9C;
+    font-size: 1.6rem;
+    width: 60vw;
+    margin: 4vh 0 8vh 3vw;
+ }
+
+.que-color {
+    background-color: #4F64D3;
+    height: 70vh;
+    width: 32vw;
+    margin-left: 8vw;
+    
+}
+}

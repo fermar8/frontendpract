@@ -3,34 +3,24 @@
 .other-pages {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    margin-left: 3vw;
+
     }
 
 .other-design {
-    margin-top: 6vh;
-    margin-left: 3vw;
     z-index: -1;
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 30vh;
- }
+}
 
 .other-development {
-    display: flex;
-    margin-left: 3vw;
     z-index: -1;
-    flex-direction: column;
-    width: 100vw;
-    height: 30vh;
 }
 
 .other-marketing {
-    display: flex;
     z-index: -1;
-    flex-direction: column;
-    margin-left: 3vw;
-    width: 100vw;
-    height: 40vh;
 }
 
 .other-title {

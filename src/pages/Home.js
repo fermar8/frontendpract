@@ -17,7 +17,9 @@ function Home () {
 
 
         return(
-            <div className="grids" id='home'>
+            <div className="grids">
+                <span id='home'>&nbsp;</span>
+                <br></br>
                 <div id="#trigger-view" data-aos-anchor="#trigger-view" className="homePage">
                     <div id ="trigger-view" data-aos="zoom-in" className="left-div"><p className="text-left">HO</p></div>
                     <div id ="trigger-view" data-aos="zoom-in" className="right-div"><p className="text-right">LA</p></div>
@@ -26,6 +28,8 @@ function Home () {
                     <h1 className="quien-title">Quiénes Somos</h1>
                     <p className="quien-text">“LOGO is a digital agency and a young start up studio” </p>
                 </div>
+                <span id="oferta">&nbsp;</span>
+                <br></br>
                 <div className="que-page" data-aos="zoom-in">
                         <h1 className="que-title">Qué ofrecemos</h1>
                     <div className="que-row">
@@ -33,7 +37,13 @@ function Home () {
                         <div className="que-color"></div>
                     </div>
                 </div>
+
                 <div className="other-pages">
+
+                <span id="design" >&nbsp;</span>
+                <br></br>
+                <br></br>
+
                   <div className="other-design" data-aos="zoom-in">
                     <h1 className="other-title">Design</h1>
                     <p className="other-text">Web Design</p>
@@ -42,6 +52,8 @@ function Home () {
                     <p className="other-text">UI&UX</p>
                   </div>
 
+                    <span id="development">&nbsp;</span>
+                    <br></br>
                   <div className="other-development" data-aos="zoom-in">
                     <h1 className="other-title">Development</h1>
                     <p className="other-text">Front & Back</p>
@@ -50,6 +62,8 @@ function Home () {
                     <p className="other-text">e-Commerce</p>
                   </div>
 
+                    <span id="marketing">&nbsp;</span>
+                    <br></br>
                   <div className="other-marketing" data-aos="zoom-in">
                     <h1 className="other-title">Webmarketing</h1>
                     <p className="other-text">Estrategia Xarxes Socials</p>

@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import { NavHashLink } from 'react-router-hash-link';
+import { HashLink as Link } from 'react-router-hash-link';
 import './navbar.css'
 
 class Navbar extends Component {
@@ -23,7 +22,7 @@ class Navbar extends Component {
         const showingFirstStyle = { 
             width: '100vw',
             maxWidth: '100%',
-            height: '60px',
+            height: '80px',
             position: 'fixed',
             backgroundColor: 'black',
             display: 'flex',
@@ -36,7 +35,7 @@ class Navbar extends Component {
         const showingSecondStyle = {
             width: '100vw',
             maxWidth: '100%',
-            height: '60px',
+            height: '80px',
             position: 'fixed',
             backgroundColor: 'black',
             display: 'flex',
@@ -48,11 +47,11 @@ class Navbar extends Component {
 
         const menuShowingStyle = {
             height: '100vh',
-            width: '70vw',
+            width: '100vw',
             position: 'fixed',
-            marginTop: '8vh',
+            marginTop: '80px',
             opacity: 1,
-            backgroundColor: 'grey',
+            backgroundColor: 'black',
             transition: 'width 0.4s ease 0.5s'
         }
 
@@ -88,7 +87,7 @@ class Navbar extends Component {
             maxHeight: 0,
             minWidth: 0,
             position: 'fixed',
-            marginTop: '5vh',
+            marginTop: '80px',
             width: 0,
             maxWidth: 0,
             opacity: 0,
@@ -105,21 +104,25 @@ class Navbar extends Component {
                 <button onClick={this.handleNavbar} className="starting-button">☰</button> 
             </div> :
                 <div style={showingSecondStyle}>
-                    <button onClick={this.handleNavbar} className="finish-button">|||</button> 
-                    <p className="starting-button">LOGO</p> 
+                    <p className="logo">LOGO</p> 
+                    <button onClick={this.handleNavbar} className="starting-button">|||</button>  
                 </div> 
              }
 
 
             <ul style={menuShowing ? menuShowingStyle : menuHideStyle}>
            
-                <NavHashLink onClick={this.handleNavbar} style={menuShowing ? linksShowingStyle : linksNotShowingStyle} to={'/#home'}><li className='list-nav'>Home.</li></NavHashLink>
+                <Link onClick={this.handleNavbar} style={menuShowing ? linksShowingStyle : linksNotShowingStyle} smooth to={'/#home'}><li className='list-nav'>Home.</li></Link>
  
-                <NavHashLink onClick={this.handleNavbar} style={menuShowing ? linksShowingStyle : linksNotShowingStyle} to={'/#about'}><li className='list-nav'>Quiénes Somos.</li></NavHashLink>
+                <Link onClick={this.handleNavbar} style={menuShowing ? linksShowingStyle : linksNotShowingStyle} smooth to={'/#about'}><li className='list-nav'>Quiénes Somos.</li></Link>
 
-                <NavHashLink onClick={this.handleNavbar} style={menuShowing ? linksShowingStyle : linksNotShowingStyle} to={'/#about'}><li className='list-nav'>Valores.</li></NavHashLink>
+                <Link onClick={this.handleNavbar} style={menuShowing ? linksShowingStyle : linksNotShowingStyle} smooth to={'/#oferta'}><li className='list-nav'>Qué ofrecemos.</li></Link>
 
-                <NavHashLink onClick={this.handleNavbar} style={menuShowing ? linksShowingStyle : linksNotShowingStyle} to={'/#about'}><li className='list-nav'>Portfolio.</li></NavHashLink>
+                <Link onClick={this.handleNavbar} style={menuShowing ? linksShowingStyle : linksNotShowingStyle} smooth to={'/#design'}><li className='list-nav'>Design.</li></Link>
+
+                <Link onClick={this.handleNavbar} style={menuShowing ? linksShowingStyle : linksNotShowingStyle} smooth to={'/#development'}><li className='list-nav'>Development.</li></Link>
+
+                <Link onClick={this.handleNavbar} style={menuShowing ? linksShowingStyle : linksNotShowingStyle} smooth to={'/#marketing'}><li className='list-nav'>Webmarketing.</li></Link>
             </ul>
 
          </>

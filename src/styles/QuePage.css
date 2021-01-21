@@ -1,20 +1,21 @@
 @media only screen and (max-width: 500px) {
 
 .que-page {
-     background-color: black;
+    background-color: black;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     position: relative;
     z-index: -1;
-    margin-top: 6vh;
     width: 100vw;
-    height: 88vh;
+    height: 100vh;
     border: none;
     outline: none;
     }
 
 .que-title {
     color: #4F64D3;
+    margin-top: 6vh;
     font-size: 2rem;
     margin: 0 0 0 2vw;
     }
@@ -27,7 +28,7 @@
     color: #9D9C9C;
     font-size: 1.6rem;
     width: 60vw;
-    margin: 4vh 0 8vh 3vw;
+    margin: 4vh 0 0 3vw;
  }
 
 .que-color {

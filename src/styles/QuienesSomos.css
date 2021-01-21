@@ -1,13 +1,12 @@
 @media only screen and (max-width: 500px) {
 
-.quien-page {
+    .quien-page {
     background-color: #BA2F11;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     position: relative;
     z-index: -1;
-    margin-top: vh;
     width: 100vw;
     height: 100vh;
     border: none;

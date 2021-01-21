@@ -16,7 +16,7 @@
 .quien-title {
     color: #fafafa;
     font-size: 2rem;
-    margin: 0 0 0 2vw;
+    margin: 0 0 0 3vw;
 }
 
 .quien-text {
@@ -26,4 +26,126 @@
 }
 
 
+}
+
+
+@media screen and (orientation:landscape)
+and (min-device-width: 300px) 
+and (max-device-width: 600px) {
+
+    .quien-page {
+        background-color: #BA2F11;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        border: none;
+        outline: none;
+    }
+    
+    .quien-title {
+        color: #fafafa;
+        font-size: 2rem;
+        margin: 0 0 0 3vw;
+    }
+    
+    .quien-text {
+        color: #9D9C9C;
+        font-size: 1.6rem;
+        margin: 1vh 4vw 8vh 3vw;
+    }
+    
+}
+
+@media screen and (orientation:landscape)
+and (min-device-width: 600px) 
+and (max-device-width: 700px) {
+
+    .quien-page {
+        background-color: #BA2F11;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        border: none;
+        outline: none;
+    }
+    
+    .quien-title {
+        color: #fafafa;
+        font-size: 2rem;
+        margin: 0 0 0 3vw;
+    }
+    
+    .quien-text {
+        color: #9D9C9C;
+        font-size: 1.6rem;
+        margin: 1vh 4vw 8vh 3vw;
+    }
+}
+
+@media screen and (orientation:landscape)
+and (min-device-width: 700px) 
+and (max-device-width: 800px) {
+
+    .quien-page {
+        background-color: #BA2F11;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        border: none;
+        outline: none;
+    }
+    
+    .quien-title {
+        color: #fafafa;
+        font-size: 2rem;
+        margin: 0 0 0 3vw;
+    }
+    
+    .quien-text {
+        color: #9D9C9C;
+        font-size: 1.6rem;
+        margin: 1vh 4vw 8vh 3vw;
+    }
+}
+
+@media screen and (orientation:landscape)
+and (min-device-width: 800px) 
+and (max-device-width: 900px) {
+
+    .quien-page {
+        background-color: #BA2F11;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        position: relative;
+        z-index: -1;
+        width: 100vw;
+        height: 100vh;
+        border: none;
+        outline: none;
+    }
+    
+    .quien-title {
+        color: #fafafa;
+        font-size: 2rem;
+        margin: 0 0 0 3vw;
+    }
+    
+    .quien-text {
+        color: #9D9C9C;
+        font-size: 1.6rem;
+        margin: 1vh 4vw 8vh 3vw;
+    }
 }

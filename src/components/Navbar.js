@@ -52,7 +52,7 @@ class Navbar extends Component {
             marginTop: '80px',
             opacity: 1,
             backgroundColor: 'black',
-            transition: 'width 0.4s ease 0.5s'
+            transition: 'width 2s ease 0.5s'
         }
 
         const linksShowingStyle = {
@@ -118,11 +118,8 @@ class Navbar extends Component {
 
                 <Link onClick={this.handleNavbar} style={menuShowing ? linksShowingStyle : linksNotShowingStyle} smooth to={'/#oferta'}><li className='list-nav'>Qué ofrecemos.</li></Link>
 
-                <Link onClick={this.handleNavbar} style={menuShowing ? linksShowingStyle : linksNotShowingStyle} smooth to={'/#design'}><li className='list-nav'>Design.</li></Link>
+                <Link onClick={this.handleNavbar} style={menuShowing ? linksShowingStyle : linksNotShowingStyle} smooth to={'/#services'}><li className='list-nav'>Servicios.</li></Link>
 
-                <Link onClick={this.handleNavbar} style={menuShowing ? linksShowingStyle : linksNotShowingStyle} smooth to={'/#development'}><li className='list-nav'>Development.</li></Link>
-
-                <Link onClick={this.handleNavbar} style={menuShowing ? linksShowingStyle : linksNotShowingStyle} smooth to={'/#marketing'}><li className='list-nav'>Webmarketing.</li></Link>
             </ul>
 
          </>

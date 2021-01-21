@@ -40,9 +40,10 @@ function Home () {
 
                 <div className="other-pages">
 
-                <span id="design" >&nbsp;</span>
+                <span id="services" >&nbsp;</span>
                 <br></br>
                 <br></br>
+
 
                   <div className="other-design" data-aos="zoom-in">
                     <h1 className="other-title">Design</h1>
@@ -52,8 +53,6 @@ function Home () {
                     <p className="other-text">UI&UX</p>
                   </div>
 
-                    <span id="development">&nbsp;</span>
-                    <br></br>
                   <div className="other-development" data-aos="zoom-in">
                     <h1 className="other-title">Development</h1>
                     <p className="other-text">Front & Back</p>
@@ -62,8 +61,6 @@ function Home () {
                     <p className="other-text">e-Commerce</p>
                   </div>
 
-                    <span id="marketing">&nbsp;</span>
-                    <br></br>
                   <div className="other-marketing" data-aos="zoom-in">
                     <h1 className="other-title">Webmarketing</h1>
                     <p className="other-text">Estrategia Xarxes Socials</p>

@@ -14,14 +14,16 @@
 }
 
 .quien-title {
+    font-family: Gilroy;
     color: #fafafa;
     font-size: 2rem;
     margin: 0 0 0 3vw;
 }
 
 .quien-text {
+    font-family: Montserrat;
     color: #9D9C9C;
-    font-size: 1.6rem;
+    font-size: 20px;
     margin: 1vh 4vw 8vh 3vw;
 }
 
@@ -47,14 +49,16 @@ and (max-device-width: 600px) {
     }
     
     .quien-title {
+        font-family: Gilroy;
         color: #fafafa;
         font-size: 2rem;
         margin: 0 0 0 3vw;
     }
     
     .quien-text {
+        font-family: Montserrat;
         color: #9D9C9C;
-        font-size: 1.6rem;
+        font-size: 20px;
         margin: 1vh 4vw 8vh 3vw;
     }
     
@@ -78,14 +82,16 @@ and (max-device-width: 700px) {
     }
     
     .quien-title {
+        font-family: Gilroy;
         color: #fafafa;
         font-size: 2rem;
         margin: 0 0 0 3vw;
     }
     
     .quien-text {
+        font-family: Montserrat;
         color: #9D9C9C;
-        font-size: 1.6rem;
+        font-size: 20px;
         margin: 1vh 4vw 8vh 3vw;
     }
 }
@@ -108,14 +114,16 @@ and (max-device-width: 800px) {
     }
     
     .quien-title {
+        font-family: Gilroy;
         color: #fafafa;
         font-size: 2rem;
         margin: 0 0 0 3vw;
     }
     
     .quien-text {
+        font-family: Montserrat;
         color: #9D9C9C;
-        font-size: 1.6rem;
+        font-size: 20px;
         margin: 1vh 4vw 8vh 3vw;
     }
 }
@@ -138,14 +146,16 @@ and (max-device-width: 900px) {
     }
     
     .quien-title {
+        font-family: Gilroy;
         color: #fafafa;
         font-size: 2rem;
         margin: 0 0 0 3vw;
     }
     
     .quien-text {
+        font-family: Montserrat;
         color: #9D9C9C;
-        font-size: 1.6rem;
+        font-size: 20px;
         margin: 1vh 4vw 8vh 3vw;
     }
 }

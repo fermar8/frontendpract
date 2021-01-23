@@ -1,5 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import './fonts/Gilroy-ExtraBold.ttf';
+import './index.css';
 
 import {BrowserRouter as Router} from 'react-router-dom';
 import App from './App';

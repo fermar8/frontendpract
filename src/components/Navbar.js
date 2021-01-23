@@ -4,13 +4,14 @@ import Burger from './Burger'
 
 const Nav = styled.nav`
     width: 100vw;
-    height: 45px;
+    height: 55px;
     display: flex;
     justify-content: space-between;
 
     .logo {
+        font-family: Gilroy;
         padding: 15px 0 0 15px;
-        font-size: 1.5rem;
+        font-size: 30px;
         color: white;
     }
 `

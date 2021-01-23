@@ -13,30 +13,19 @@
         }
     
     .que-title {
+        font-family: Gilroy;
         color: #4F64D3;
-        margin-top: 6vh;
-        font-size: 2rem;
-        margin: 0 0 0 3vw;
+        font-size: 30px;
+        margin: 0 20px 20px 20px;
         }
         
-    .que-row {
-        display: flex;
-    }
-    
     .que-text {
+        font-family: Montserrat;
         color: #9D9C9C;
-        font-size: 1.4rem;
-        width: 60vw;
-        margin: 4vh 0 0 3vw;
+        font-size: 20px;
+        margin: 0 20px 20px 20px;
      }
     
-    .que-color {
-        background-color: #4F64D3;
-        height: 70vh;
-        width: 32vw;
-        margin-left: 8vw;
-        
-    }
  }
 
 
@@ -56,10 +45,10 @@
     }
 
 .que-title {
+    font-family: Gilroy;
     color: #4F64D3;
-    margin-top: 6vh;
+    margin: 0 0 20px 20px;
     font-size: 2rem;
-    margin: 0 0 0 2vw;
     }
     
 .que-row {
@@ -67,19 +56,12 @@
 }
 
 .que-text {
+    font-family: Montserrat;
     color: #9D9C9C;
-    font-size: 1.6rem;
-    width: 60vw;
-    margin: 4vh 0 0 3vw;
+    font-size: 20px;
+    margin: 0 20px 20px 20px;
  }
 
-.que-color {
-    background-color: #4F64D3;
-    height: 70vh;
-    width: 32vw;
-    margin-left: 8vw;
-    
-}
 }
 
 
@@ -101,19 +83,19 @@ and (max-device-width: 600px) {
         }
     
     .que-title {
+        font-family: Gilroy;
         color: #4F64D3;
         margin-top: 6vh;
         font-size: 2rem;
         margin: 0 0 0 2vw;
         }
         
-    .que-row {
-        display: flex;
-    }
+    
     
     .que-text {
+        font-family: Montserrat;
         color: #9D9C9C;
-        font-size: 1.4rem;
+        font-size: 20px;
         width: 90vw;
         margin: 4vh 0 0 2vw;
      }
@@ -146,19 +128,19 @@ and (max-device-width: 700px) {
         }
     
     .que-title {
+        font-family: Gilroy;
         color: #4F64D3;
         margin-top: 6vh;
         font-size: 2rem;
         margin: 0 0 0 2vw;
         }
         
-    .que-row {
-        display: flex;
-    }
+    
     
     .que-text {
+        font-family: Montserrat;
         color: #9D9C9C;
-        font-size: 1.4rem;
+        font-size: 20px;
         width: 90vw;
         margin: 4vh 0 0 2vw;
      }
@@ -190,19 +172,19 @@ and (max-device-width: 800px) {
         }
     
     .que-title {
+        font-family: Gilroy;
         color: #4F64D3;
         margin-top: 6vh;
         font-size: 2rem;
         margin: 0 0 0 2vw;
         }
         
-    .que-row {
-        display: flex;
-    }
+    
     
     .que-text {
+        font-family: Montserrat;
         color: #9D9C9C;
-        font-size: 1.6rem;
+        font-size: 20px;
         width: 90vw;
         margin: 4vh 0 0 2vw;
      }
@@ -236,19 +218,18 @@ and (max-device-width: 900px) {
         }
     
     .que-title {
+        font-family: Gilroy;
         color: #4F64D3;
         margin-top: 6vh;
         font-size: 2rem;
         margin: 0 0 0 2vw;
         }
         
-    .que-row {
-        display: flex;
-    }
     
     .que-text {
+        font-family: Montserrat;
         color: #9D9C9C;
-        font-size: 1.6rem;
+        font-size: 20px;
         width: 90vw;
         margin: 4vh 0 0 2vw;
      }

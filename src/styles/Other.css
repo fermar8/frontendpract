@@ -3,25 +3,29 @@
     .other-pages {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
+        background-color: #4F64D3;
+        justify-content: space-around;
         width: 100vw;
         height: 100vh;
         z-index: -1;
         }
     
     .other-design {
-        z-index: -1;
-        margin: 8px 0 8px 3vw;
+        z-index: 0;
+        background-color: #4F64D3;
+        margin: 0 20px 0 20px;
     }
     
     .other-development {
-        z-index: -1;
-        margin: 8px 0 8px 3vw;
+        z-index: 0;
+        background-color: #4F64D3;
+        margin: 0 20px 0 20px;
     }
     
     .other-marketing {
-        z-index: -1;
-        margin: 8px 0 8px 3vw;
+        z-index: 0;
+        background-color: #4F64D3;
+        margin: 0 20px 0 20px;
     }
     
     .other-title {
@@ -35,7 +39,6 @@
         font-family: Montserrat;
         color: white;
         font-size: 20px;
-        color: #9D9C9C;
     }
 
 }

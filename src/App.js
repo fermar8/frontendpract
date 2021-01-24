@@ -1,21 +1,34 @@
-import React, {Component} from 'react';
+import React, {useState} from 'react';
 import Navbar from './components/Navbar'
-import {Switch, Router, Route, Link} from 'react-router-dom'
+import { Switch,  Route } from 'react-router-dom'
 import Home from './pages/Home';
+import Contact from './pages/Contact';
 import './App.css';
 
-class App extends Component {
-  render() {
+function App() {
+  
+  let languageStoredInLocalStorage = localStorage.getItem('language');
+  let [language, setLanguage] = useState ( languageStoredInLocalStorage ? languageStoredInLocalStorage : 'Catalan')
+
   return (
     <div className="App">
-        <Navbar/>
+        <Navbar language={language}
+                handleSetLanguage={language => {setLanguage(language);
+                storeLanguageInLocalStorage(language);
+                }}
+        />
 
         <Switch>
-          <Route exact path="/" component={Home} />
+          <Route exact path="/" render={(props) => <Home {...props} language={language} />} />
+          <Route exact path="/contact" component={Contact} />
         </Switch>
     </div>
   );
   }
-}
+
+  function storeLanguageInLocalStorage(language) {
+    localStorage.setItem('language', language);
+  }
+
 
 export default App;

@@ -1,14 +1,14 @@
-import React from 'react'
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const Ul = styled.ul`
+
+export const Ul = styled.ul`
         list-style: none;
         display: flex;
         flew-flow: row nowrap;
         
         li {
-            padding: 18px 10px;
+            margin-left: 20px;
+            padding-top: 10px;
         }
 
         @media (max-width: 768px) {
@@ -18,6 +18,7 @@ const Ul = styled.ul`
             position: fixed; 
             transform: ${({ open })  => open ? 'translateX(0)' : 'translateX(100%)'};
             top: 0;
+            z-index: 20;
             font-family: Gilroy;
             font-size: 30px;
             right: 0;
@@ -35,6 +36,7 @@ const Ul = styled.ul`
                 display: flex;
                 flex-direction: column;
                 justify-content: flex-end;
+                padding-bottom: 8px;
             }
 
             li {
@@ -66,38 +68,13 @@ const Ul = styled.ul`
 
             .contact-text {
                 color: white;
-                padding-left: 10px;
                 margin-left: 20px;
                 font-size: 10px;
                 font-family: Montserrat;
                 text-align: left;
             }
+
+            .language-choice {
+                color: white;
+            }
 `
-
-
-const RightNav = ({ open, setOpen }) => {
-
-    return (
-        <div className="menu-main">
-            <Ul  open={open}>
-                 <div>
-                    <Link className="links" to={'/'} onClick={() => setOpen(!open)}><li>L'agència.</li></Link>
-                    
-                    <div className="row-div">
-                    <Link className="links" onClick={() => setOpen(!open)}><li className="portfoli">Portfoli.</li></Link>
-                    <p className="coming-soon">coming soon</p>
-                    </div>
-                </div>
-
-                <div className="contact">
-                    <p className="contact-text">16 Place Cormontaigne, 59000 Lille France</p>
-                    <p className="contact-text">+33(0)3 20 88 11 59</p>
-                    <p className="contact-text">contact@wokine.com</p>
-                </div>
-
-            </Ul>
-        </div>
-    )
-}
-
-export default RightNav;

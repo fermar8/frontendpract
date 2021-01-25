@@ -10,16 +10,24 @@ function App() {
   let languageStoredInLocalStorage = localStorage.getItem('language');
   let [language, setLanguage] = useState ( languageStoredInLocalStorage ? languageStoredInLocalStorage : 'Catalan')
 
+  let themeStoredInLocalStorage = localStorage.getItem('theme');
+  let [theme, setTheme] = useState ( themeStoredInLocalStorage ? themeStoredInLocalStorage : 'Dark')
+
   return (
     <div className="App">
         <Navbar language={language}
                 handleSetLanguage={language => {setLanguage(language);
                 storeLanguageInLocalStorage(language);
                 }}
+
+                theme={theme}
+                handleSetTheme={theme => {setTheme(theme);
+                storeThemeinLocalStorage(theme);
+                }}
         />
 
         <Switch>
-          <Route exact path="/" render={(props) => <Home {...props} language={language} />} />
+          <Route exact path="/" render={(props) => <Home {...props} language={language} theme={theme} />} />
           <Route exact path="/contact" component={Contact} />
         </Switch>
     </div>
@@ -28,6 +36,10 @@ function App() {
 
   function storeLanguageInLocalStorage(language) {
     localStorage.setItem('language', language);
+  }
+
+  function storeThemeinLocalStorage(theme) {
+    localStorage.setItem('theme', theme);
   }
 
 

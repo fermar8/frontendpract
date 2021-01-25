@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 
-export const Ul = styled.ul`
+export const DarkUl = styled.ul`
         list-style: none;
         display: flex;
         flew-flow: row nowrap;

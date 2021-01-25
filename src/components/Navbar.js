@@ -1,8 +1,18 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Nav } from './../styles/NavbarNav';
-import { StyledBurger } from './../styles/NavbarBurger';
-import { Ul } from './../styles/NavbarUl';
+
+import { DarkNav } from '../styles/navbar-styles/DarkNav';
+import { DarkBurger } from '../styles/navbar-styles/DarkBurger';
+import { DarkUl } from '../styles/navbar-styles/DarkUl';
+import { LightNav } from '../styles/navbar-styles/LightNav';
+import { LightBurger } from '../styles/navbar-styles/LightBurger';
+import { LightUl } from '../styles/navbar-styles/LightUl';
+
+import { DarkSelectedBtn } from '../styles/elements/DarkSelectedBtn';
+import { DarkBtn } from '../styles/elements/DarkBtn';
+import { LightSelectedBtn } from '../styles/elements/LightSelectedBtn';
+import { LightBtn } from '../styles/elements/LightBtn';
+
 
 
 function Navbar (props) {
@@ -13,43 +23,160 @@ function Navbar (props) {
         Spanish: {
             agencia: 'La agencia.',
             portfoli: 'Portfolio.',
-            proximament: 'próximamente'
+            proximament: 'próximamente',
+            temaClar: 'Claro',
+            temaFosc: 'Oscuro'
         },
 
         Catalan: {
             agencia: "L'agència.",
             portfoli: 'Portfoli.',
-            proximament: 'pròximament'
+            proximament: 'pròximament',
+            temaClar: 'Clar',
+            temaFosc: 'Fosc'
         },
 
         English: {
             agencia: "The agency.",
             portfoli: 'Portfolio.',
-            proximament: 'coming soon'
+            proximament: 'coming soon',
+            temaClar: 'Light',
+            temaFosc: 'Dark'
         }
     };
 
+    let theme = {
+        dark: {
+            nav: DarkNav,
+            ul: DarkUl, 
+            burger: DarkBurger
+        },
+        
+        light: {
+            nav: LightNav,
+            ul: LightUl,
+            burger: LightBurger
+        }
+    }
+
+    let engBtn = {
+        dark: {
+            btn: DarkBtn
+        },
+        darkEnglishSel: {
+            btn: DarkSelectedBtn
+        },
+        light: {
+            btn: LightBtn
+        },
+        lightEnglishSel: {
+            btn: LightSelectedBtn
+        }
+
+    }
+
+    let espBtn = {
+        dark: {
+            btn: DarkBtn
+        },
+        darkEspSel: {
+            btn: DarkSelectedBtn
+        },
+        light: {
+            btn: LightBtn
+        },
+        lightEspSel: {
+            btn: LightSelectedBtn
+        }
+    }
+
+    let catBtn = {
+        dark: {
+            btn: DarkBtn
+        },
+        darkCatSel: {
+            btn: DarkSelectedBtn
+        },
+        light: {
+            btn: LightBtn
+        },
+        lightCatSel: {
+            btn: LightSelectedBtn
+        }
+    }
+
+ //handle language for navbar
     if (props.language === 'Catalan') {
         content = content.Catalan;
     } else if (props.language === 'Spanish') {
         content = content.Spanish;
     } else {
         content = content.English;
-    }
+    };
 
+ //handle themes
+    if (props.theme === 'Dark') {
+        theme = theme.dark;
+    } else {
+        theme = theme.light;
+    };
+
+ //handle English buttons
+    if (props.theme === 'Dark' && props.language === 'English') {
+        engBtn = engBtn.darkEnglishSel;
+    } else if (props.theme === 'Dark' && props.language !== 'English') {
+        engBtn = engBtn.dark;
+    } else if (props.theme === 'Light' && props.language === 'English') {
+        engBtn = engBtn.lightEnglishSel;
+    } else {
+        engBtn = engBtn.light;
+    };
+
+ //handle Spanish buttons
+
+    if (props.theme === 'Dark' && props.language === 'Spanish') {
+        espBtn = espBtn.darkEspSel
+    } else if (props.theme === 'Dark' && props.language !== 'Spanish') {
+        espBtn = espBtn.dark;
+    } else if (props.theme === 'Light' && props.language === 'Spanish') {
+        espBtn = espBtn.lightEspSel;
+    } else {
+        espBtn = espBtn.light;
+    };
+
+ //handle Catalan buttons
+    if (props.theme === 'Dark' && props.language === 'Catalan') {
+        catBtn = catBtn.darkCatSel
+    } else if (props.theme === 'Dark' && props.language !== 'Catalan') {
+        catBtn = catBtn.dark;
+    } else if (props.theme === 'Light' && props.language === 'Catalan') {
+        catBtn = catBtn.lightCatSel;
+    } else {
+        catBtn = catBtn.light;
+    };
 
         return (
-            <Nav>
+            <theme.nav>
                 <div className = "logo">
-                    LOGO
+                &nbsp;ON&nbsp;
                 </div>
-                <StyledBurger open={open} onClick={() => setOpen(!open)}>
+              <div className="lang-and-burger">
+                <div className="lang">
+                    <engBtn.btn value='English' onClick={e => props.handleSetLanguage(e.target.value)}>EN</engBtn.btn>
+                    <p>/</p>
+                    <espBtn.btn value='Spanish' onClick={e => props.handleSetLanguage(e.target.value)} >ES</espBtn.btn>
+                    <p>/</p>
+                    <catBtn.btn value='Catalan' onClick={e => props.handleSetLanguage(e.target.value)}>CAT</catBtn.btn>
+                </div>
+                <theme.burger open={open} onClick={() => setOpen(!open)}>
                     <div/>
                     <div/>
                     <div/>  
-                </StyledBurger>
+                </theme.burger>
+               </div>
+
                 <div className="menu-main">
-            <Ul  open={open}>
+            <theme.ul  open={open}>
                  <div>
                     <Link className="links" to={'/'} onClick={() => setOpen(!open)}><li>{content.agencia}</li></Link>
                     
@@ -59,13 +186,12 @@ function Navbar (props) {
                     </div>
 
                     <select
-                    className="custom-select"
-                    value={props.language}
-                    onChange={e => props.handleSetLanguage(e.target.value)}
+                    className="theme-select"
+                    value={props.theme}
+                    onChange={e => props.handleSetTheme(e.target.value)}
                     >
-                        <option value="Catalan">Catalan</option>
-                        <option value="Spanish">Spanish</option>
-                        <option value="English">English</option>
+                        <option value="Dark">{content.temaFosc}</option>
+                        <option value="Light">{content.temaClar}</option>
                     </select>
 
 
@@ -77,9 +203,9 @@ function Navbar (props) {
                     <p className="contact-text">contact@wokine.com</p>
                 </div>
 
-            </Ul>
+            </theme.ul>
         </div>
-            </Nav>
+            </theme.nav>
         )
     
     }

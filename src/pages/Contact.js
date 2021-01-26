@@ -1,77 +1,69 @@
-import React, {Component} from 'react';
+import React, { Fragment, useState } from 'react';
+import { Redirect } from 'react-router-dom';
 import axios from 'axios';
 
 
-class Contact extends Component {
-    constructor(props) {
-      super(props);
-      this.state = {
-        name: '',
-        email: '',
-        subject: '',
-        message: ''
-      }
-    }
+function Contact () {
 
-    onNameChange(event) {
-        this.setState({name: event.target.value})
-      }
-    
-    onEmailChange(event) {
-        this.setState({email: event.target.value})
-      }
+  const [data, setData] = useState({
+     name: '',
+     phone: '',
+     email: '',
+     message: ''
+  });
 
-    onSubjectChange(event) {
-        this.setState({subject: event.target.value})
-    }
-    
-    onMessageChange(event) {
-        this.setState({message: event.target.value})
-      }
-    
-    handleSubmit(e) {
-    e.preventDefault();
-      
+  const [submitted, setSubmitted] = useState(false)
+
+  const handleInputChange = (event) => {
+    setData({
+      ...data,
+      [event.target.name] : event.target.value
+    })
+  }
+
+  const sendData = (event) => {
+    event.preventDefault();
     axios({
-        method: "POST", 
-        url:"http://localhost:3002/send", 
-        data:  this.state
-            }).then((response)=>{
-                if (response.data.status === 'success') {
-                alert("Message Sent."); 
-                this.resetForm()
-            } else if(response.data.status === 'fail') {
-                alert("Message failed to send.")
-            }
-        })
-      }
-  
-    render() {
+      method: "POST", 
+      url:"http://localhost:3002/send", 
+      data:  data
+          }).then((response)=>{
+              if (response.data.status === 'success') { 
+              setSubmitted(true);
+          } else if(response.data.status === 'fail') {
+          }
+      })
+  }
+
+  if (submitted) {
+    return <Redirect push to={{
+      pathname: '/success'
+    }}/>
+  }
+    
       return(
-        <div className="form-main-div">
-          <form id="contact-form" onSubmit={this.handleSubmit.bind(this)} method="POST">
+       <Fragment>
+        <h1>Contacta</h1>
+          <form className="contact-form" onSubmit={sendData} method="POST">
             <div className="form-group">
-              <label htmlFor="name">Name</label>
-              <input type="text" className="form-control" value={this.state.name} onChange={this.onNameChange.bind(this)} />
+              <input type="text" className="form-control" placeholder='Nom' name='nom' onChange={handleInputChange} />
             </div>
             <div className="form-group">
-              <label htmlFor="exampleInputEmail1">Email address</label>
-              <input type="email" className="form-control" aria-describedby="emailHelp" value={this.state.email} onChange={this.onEmailChange.bind(this)} />
+              <input type="text" className="form-control" placeholder='Telèfon' name='telèfon' onChange={handleInputChange} />
             </div>
             <div className="form-group">
-              <label htmlFor="name">Subject</label>
-              <input type="text" className="form-control" value={this.state.subject} onChange={this.onSubjectChange.bind(this)} />
+              <input type="email" className="form-control" placeholder='Email' name='email' onChange={handleInputChange} />
             </div>
             <div className="form-group">
-              <label htmlFor="message">Message</label>
-              <textarea className="form-control" rows="5" value={this.state.message} onChange={this.onMessageChange.bind(this)} />
+              <textarea className="form-control" placeholder='El teu missatge' name='missatge' onChange={handleInputChange} />
             </div>
             <button type="submit" className="btn btn-primary">Submit</button>
           </form>
-        </div>
+      </Fragment>
       );
     }
   
-  }
+  
+  
   
   export default Contact;

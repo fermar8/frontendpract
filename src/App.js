@@ -1,8 +1,9 @@
 import React, {useState} from 'react';
 import Navbar from './components/Navbar'
-import { Switch,  Route } from 'react-router-dom'
+import { Switch,  Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
+import Success from './pages/Success';
 import './App.css';
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Switch>
           <Route exact path="/" render={(props) => <Home {...props} language={language} theme={theme} />} />
           <Route exact path="/contact" component={Contact} />
+          <Route exact path='/success' component={Success} />
         </Switch>
     </div>
   );

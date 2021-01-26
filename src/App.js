@@ -29,8 +29,8 @@ function App() {
 
         <Switch>
           <Route exact path="/" render={(props) => <Home {...props} language={language} theme={theme} />} />
-          <Route exact path="/contact" component={Contact} />
-          <Route exact path='/success' component={Success} />
+          <Route exact path="/contact" render={(props) => <Contact {...props} language={language} theme={theme} />} />
+          <Route exact path='/success' render={(props) => <Success {...props} language={language} theme={theme} />} />
         </Switch>
     </div>
   );

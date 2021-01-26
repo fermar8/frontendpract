@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import NightsStayIcon from '@material-ui/icons/NightsStay';
+import WbSunnyIcon from '@material-ui/icons/WbSunny';
+
 import { DarkNav } from '../styles/navbar-styles/DarkNav';
 import { DarkBurger } from '../styles/navbar-styles/DarkBurger';
 import { DarkUl } from '../styles/navbar-styles/DarkUl';
@@ -115,6 +118,7 @@ function Navbar (props) {
     };
 
  //handle themes
+
     if (props.theme === 'Dark') {
         theme = theme.dark;
     } else {
@@ -185,6 +189,19 @@ function Navbar (props) {
                     <p className="coming-soon">{content.proximament}</p>
                     </div>
 
+                    <div>
+                        <input type="checkbox" 
+                        className="checkbox" 
+                        value={props.theme}
+                        />
+                        <label for="checkbox"
+                        className="label">
+                            <NightsStayIcon className="icon-moon"/>
+                            <WbSunnyIcon className="icon-sun"/>
+                            <div className="ball"></div>
+                        </label>
+                    </div>
+
                     <select
                     className="theme-select"
                     value={props.theme}
@@ -193,8 +210,6 @@ function Navbar (props) {
                         <option value="Dark">{content.temaFosc}</option>
                         <option value="Light">{content.temaClar}</option>
                     </select>
-
-
                 </div>
 
                 <div className="contact">

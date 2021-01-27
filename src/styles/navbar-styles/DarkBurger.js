@@ -13,7 +13,8 @@ export const DarkBurger = styled.div `
     z-index: 30;
     display: none;
 
-    @media (max-width: 768px) {
+
+    @media (min-width: 0px) {
         display: flex;
         justify-content: space-around;
         flex-flow: column nowrap;
@@ -22,6 +23,35 @@ export const DarkBurger = styled.div `
     div {
         width: 30px;
         height: 4px;
+        background-color: ${({ open }) => open ? 'grey' : 'white'};
+        border-radius: 10px;
+        transform-origin: 1px;
+        transition: all 0.3s linear;
+
+
+        &:nth-child(1) {
+            transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'}
+        }
+
+        &:nth-child(2) {
+            transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
+            opacity: ${({ open }) => open ? 0 : 1}
+        }
+
+        &:nth-child(3) {
+            transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'}
+        }
+        }
+    }
+
+    @media (min-width: 600px) and (orientation:portrait) {
+        margin-right: 50px;
+        margin-top: 16px;
+
+    div {
+        width: 30px;
+        height: 4px;
+        margin-bottom: 4px;
         background-color: ${({ open }) => open ? 'grey' : 'white'};
         border-radius: 10px;
         transform-origin: 1px;

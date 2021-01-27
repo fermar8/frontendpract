@@ -34,43 +34,31 @@ export const LightNav = styled.nav`
         color: black;
         font-size: 18px;
     }
-
-    .checkbox {
-        opacity: 0;
-        position: absolute;
-    }
-
-    .label {
-        background-color: #111;
-        border-radius: 50px;
-        display: flex;
-        justify-content: space-between;
-        padding: 5px;
-        position: relative;
-        align-items: center;
-        height: 16px;
-        width: 50px;
-    }
-
-    .icon-sun {
-        color: #f39c12;
-        font-size: 20px;
-    }
-    .icon-moon {
-        color: #f1c40f;
-        font-size: 20px;
-    }
-    .ball {
-        height: 24px;
-        width: 25px;
+    
+    .theme-select {
+        font-family: FontAwesome, 'Montserrat';
+        font-size: 15px;
+        margin: 30px 0 0 20px;
+        border-radius: 4px;
+        border: 2px solid black;
         background-color: white;
-        position: absolute;
-        
-        border-radius: 50%;
-        transition: transform 0.2s linear;
+        height: 30px;
+    }
+    
+    .theme-option-light {
+        font-family: FontAwesome, 'Montserrat';
+        width: 140px;
+        background-color: white;
+        height: 30px;
+        font-size: 15px;
     }
 
-    .checkbox: checked + .label .ball {
-        transform: translateX(24px)
+    .theme-option-dark {
+        font-family: FontAwesome, 'Montserrat';
+        width: 140px;
+        background-color: black;
+        color: white;
+        height: 30px;
+        font-size: 15px;
     }
 `

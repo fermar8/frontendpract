@@ -1,9 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
-import NightsStayIcon from '@material-ui/icons/NightsStay';
-import WbSunnyIcon from '@material-ui/icons/WbSunny';
-
 import { DarkNav } from '../styles/navbar-styles/DarkNav';
 import { DarkBurger } from '../styles/navbar-styles/DarkBurger';
 import { DarkUl } from '../styles/navbar-styles/DarkUl';
@@ -27,24 +24,27 @@ function Navbar (props) {
             agencia: 'La agencia.',
             portfoli: 'Portfolio.',
             proximament: 'próximamente',
-            temaClar: 'Claro',
-            temaFosc: 'Oscuro'
+            contacte: 'Contacto.',
+            temaClar: 'Tema Claro',
+            temaFosc: 'Tema Oscuro'
         },
 
         Catalan: {
             agencia: "L'agència.",
             portfoli: 'Portfoli.',
             proximament: 'pròximament',
-            temaClar: 'Clar',
-            temaFosc: 'Fosc'
+            contacte: 'Contacte.',
+            temaClar: 'Tema Clar',
+            temaFosc: 'Tema Fosc'
         },
 
         English: {
             agencia: "The agency.",
             portfoli: 'Portfolio.',
             proximament: 'coming soon',
-            temaClar: 'Light',
-            temaFosc: 'Dark'
+            contacte: 'Contact.',
+            temaClar: 'Light Mode',
+            temaFosc: 'Dark Mode'
         }
     };
 
@@ -166,11 +166,11 @@ function Navbar (props) {
                 </div>
               <div className="lang-and-burger">
                 <div className="lang">
-                    <engBtn.btn value='English' onClick={e => props.handleSetLanguage(e.target.value)}>EN</engBtn.btn>
+                    <engBtn.btn className="lang-btn" value='English' onClick={e => props.handleSetLanguage(e.target.value)}>EN</engBtn.btn>
                     <p>/</p>
-                    <espBtn.btn value='Spanish' onClick={e => props.handleSetLanguage(e.target.value)} >ES</espBtn.btn>
+                    <espBtn.btn className="lang-btn" value='Spanish' onClick={e => props.handleSetLanguage(e.target.value)} >ES</espBtn.btn>
                     <p>/</p>
-                    <catBtn.btn value='Catalan' onClick={e => props.handleSetLanguage(e.target.value)}>CAT</catBtn.btn>
+                    <catBtn.btn className="lang-btn" value='Catalan' onClick={e => props.handleSetLanguage(e.target.value)}>CAT</catBtn.btn>
                 </div>
                 <theme.burger open={open} onClick={() => setOpen(!open)}>
                     <div/>
@@ -181,34 +181,25 @@ function Navbar (props) {
 
                 <div className="menu-main">
             <theme.ul  open={open}>
-                 <div>
+                 <div className="links-group">
                     <Link className="links" to={'/'} onClick={() => setOpen(!open)}><li>{content.agencia}</li></Link>
+
+                    <Link className="links" to={'/contact'} onClick={() => setOpen(!open)}><li>{content.contacte}</li> </Link>
                     
                     <div className="row-div">
                     <Link className="links" to={'/contact'} onClick={() => setOpen(!open)}><li className="portfoli">{content.portfoli}</li></Link>
                     <p className="coming-soon">{content.proximament}</p>
-                    </div>
+                  </div>
 
-                    <div>
-                        <input type="checkbox" 
-                        className="checkbox" 
-                        value={props.theme}
-                        />
-                        <label for="checkbox"
-                        className="label">
-                            <NightsStayIcon className="icon-moon"/>
-                            <WbSunnyIcon className="icon-sun"/>
-                            <div className="ball"></div>
-                        </label>
-                    </div>
+                    
 
-                    <select
+                    <select required
                     className="theme-select"
                     value={props.theme}
                     onChange={e => props.handleSetTheme(e.target.value)}
                     >
-                        <option value="Dark">{content.temaFosc}</option>
-                        <option value="Light">{content.temaClar}</option>
+                        <option className="theme-option-dark" value="Dark"> {content.temaFosc} &#xf186;</option>
+                        <option className="theme-option-light" value="Light">{content.temaClar} &#xf185;</option>
                     </select>
                 </div>
 

@@ -12,7 +12,7 @@ function App() {
   let [language, setLanguage] = useState ( languageStoredInLocalStorage ? languageStoredInLocalStorage : 'Catalan')
 
   let themeStoredInLocalStorage = localStorage.getItem('theme');
-  let [theme, setTheme] = useState ( themeStoredInLocalStorage ? themeStoredInLocalStorage : 'Dark')
+  let [theme, setTheme] = useState ( themeStoredInLocalStorage ? themeStoredInLocalStorage : 'Dark');
 
   return (
     <div className="App">

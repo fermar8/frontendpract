@@ -9,6 +9,44 @@ import axios from 'axios';
 
 function Contact (props) {
 
+
+  let content = {
+    spanish: {
+      contacta: 'CONTACTA',
+      nom: 'Nombre',
+      telefon: 'Teléfono',
+      email: 'Correo electrónico',
+      missatge: 'Escribe tu mensaje',
+      enviar: 'ENVIAR'
+
+    },
+    catalan: {
+      contacta: 'CONTACTA',
+      nom: 'Nom',
+      telefon: 'Telèfon',
+      email: 'Correu electrònic',
+      missatge: 'El teu missatge',
+      enviar: 'ENVIAR'
+    },
+    english : {
+      contacta: 'CONTACT US',
+      nom: 'Name',
+      telefon: 'Phone number',
+      email: 'E-mail',
+      missatge: 'Your message',
+      enviar: 'SUBMIT'
+    }
+  }
+
+  if (props.language === 'Catalan') {
+    content = content.catalan;
+  } else if (props.language === 'Spanish') {
+    content = content.spanish;
+  } else {
+    content = content.english;
+};
+
+
   let theme = {
      dark: {
        tema: DarkContact
@@ -64,21 +102,21 @@ function Contact (props) {
        <Fragment>
         <theme.tema>
           <form className="contact-form" onSubmit={sendData} method="POST">
-            <h1 className="contact-title">CONTACTA</h1>
+            <h1 className="contact-title">{content.contacta}</h1>
             <div className="form-group">
-            <input type="text" className="form-control" placeholder='&nbsp; &#xf007; &nbsp; Nom' name='nom' onChange={handleInputChange} />
+            <input type="text" className="form-control" placeholder= {content.nom} name='nom' onChange={handleInputChange} />
             </div>
             <div className="form-group">
-              <input type="text" className="form-control" placeholder='&nbsp; &#xf2a0; &nbsp; Telèfon' name='telèfon' onChange={handleInputChange} />
+              <input type="text" className="form-control" placeholder={content.telefon} name='telèfon' onChange={handleInputChange} />
             </div>
             <div className="form-group">
-            <input type="email" className="form-control" placeholder='&nbsp; &#xf0e0; &nbsp; Email' name='email' onChange={handleInputChange} />
+            <input type="email" className="form-control" placeholder={content.email} name='email' onChange={handleInputChange} />
             </div>
             <div className="form-group">
-              <textarea className="form-textarea" rows="10" placeholder='&nbsp; &#xf27a; &nbsp; El teu missatge' name='missatge' onChange={handleInputChange} />
+              <textarea className="form-textarea" rows="10" placeholder={content.missatge} name='missatge' onChange={handleInputChange} />
             </div>
             <div className="button-div">
-            <button type="submit" className="btn btn-primary"><h1 className="enviar-btn"> ENVIAR </h1><MailOutlineIcon fontSize="large"/></button>
+            <button type="submit" className="btn btn-primary"><h1 className="enviar-btn"> {content.enviar} </h1><MailOutlineIcon fontSize="large"/></button>
             </div>
           </form>
 

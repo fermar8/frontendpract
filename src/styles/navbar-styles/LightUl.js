@@ -44,7 +44,7 @@ export const LightUl = styled.ul`
             }
 
             li {
-                color: #fafafa;
+                color: black;
                 margin-left: 20px;
             }
 
@@ -63,7 +63,7 @@ export const LightUl = styled.ul`
 
             .coming-soon {
                 text-align: center;
-                color: #fafafa;
+                color: black;
                 margin: 50px 0 0 0;
                 font-size: 15px;
                 font-style: italic;
@@ -71,7 +71,7 @@ export const LightUl = styled.ul`
             }
 
 .contact-text {
-                color: #fafafa;
+                color: black;
                 margin-left: 20px;
                 font-size: 10px;
                 font-family: Montserrat;

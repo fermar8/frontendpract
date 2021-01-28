@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 import { DarkHome } from './../styles/dark/DarkHome';
 import { DarkQuien } from './../styles/dark/DarkQuien';
 import { DarkQue } from './../styles/dark/DarkQue';
-import { DarkOther } from './../styles/dark/DarkOther';
 import { DarkFooter } from './../styles/dark/DarkFooter';
+
 
 import { LightQue } from './../styles/light/LightQue';
 import { LightHome } from './../styles/light/LightHome';
 import { LightQuien } from './../styles/light/LightQuien';
-import { LightOther } from './../styles/light/LightOther';
 import { LightFooter } from './../styles/light/LightFooter';
+
 
 
 import Aos from 'aos';
@@ -106,16 +106,14 @@ function Home (props) {
             home: DarkHome,
             quien: DarkQuien,
             que: DarkQue,
-            other: DarkOther,
-            footer: DarkFooter
+            footer: DarkFooter,  
         },
 
         light: {
             home: LightHome,  
             quien: LightQuien,
             que: LightQue,
-            other: LightOther,
-            footer: LightFooter
+            footer: LightFooter,
         }
     }
 
@@ -139,7 +137,7 @@ function Home (props) {
 
         return(
         <Fragment>
-            <div className="grids">
+            <div>
               <theme.home>
                 <div id="#trigger-view" data-aos-anchor="#trigger-view" className="homePage">
                     <div id ="trigger-view" data-aos="zoom-in" className="left-div"><p className="text-left">HO</p></div>
@@ -162,8 +160,6 @@ function Home (props) {
 
 
                 </div>
-              </theme.que>
-              <theme.other>
                 <div className="other-pages">
                 
                   <div className="other-design" data-aos="zoom-in">
@@ -188,7 +184,7 @@ function Home (props) {
                    </div>
                 
                 </div>
-              </theme.other>
+              </theme.que>
             </div>
               <theme.footer>
                   <div className="footer">

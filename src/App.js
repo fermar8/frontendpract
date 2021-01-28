@@ -14,6 +14,8 @@ function App() {
   let themeStoredInLocalStorage = localStorage.getItem('theme');
   let [theme, setTheme] = useState ( themeStoredInLocalStorage ? themeStoredInLocalStorage : 'Dark');
 
+
+
   return (
     <div className="App">
         <Navbar language={language}

@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const LightHome = styled.div`
 
-@media only screen and (max-width: 500px) {
 
+@media only screen and (max-width: 320px) {
     .homePage {
         font-family: Gilroy;
         display: flex;
@@ -11,7 +11,7 @@ export const LightHome = styled.div`
         position: relative;
         width: 100vw;
         height: 100vh;
-        background-color: white;
+        background-color: #fafafa;
         border: none;
         outline: none;
         transition: opacity .1s ease;
@@ -33,28 +33,175 @@ export const LightHome = styled.div`
         flex-direction: column;
         text-align: left;
         justify-content: space-around;
-        background-color: white;
+        background-color: #fafafa;
         border: none !important;
         outline: none !important;
         width: 50vw;
     }
     
     .text-left {
-        color: white;
-        font-size: 4rem;    
+        color: #fafafa;
+        font-size: 50px;    
     }
     
     .text-right {
         color: #00929B;
-        font-size: 4rem;
+        font-size: 50px;
+    }
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+
+    .homePage {
+        font-family: Gilroy;
+        display: flex;
+        z-index: -1;
+        position: relative;
+        width: 100vw;
+        height: 100vh;
+        background-color: #fafafa;
+        border: none;
+        outline: none;
+        transition: opacity .1s ease;
+    }
+    
+    .left-div {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+        background-color: #00929B;
+        justify-content: space-around;
+        border: none !important;
+        outline: none !important;
+        width: 50vw;
+    }
+    
+    .right-div {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        justify-content: space-around;
+        background-color: #fafafa;
+        border: none !important;
+        outline: none !important;
+        width: 50vw;
+    }
+    
+    .text-left {
+        color: #fafafa;
+        font-size: 50px;    
+    }
+    
+    .text-right {
+        color: #00929B;
+        font-size: 50px;
     }
     
     }
+
+@media only screen and (min-width: 600px) and (max-width: 1024px) {
+
+.homePage {
+    font-family: Gilroy;
+    display: flex;
+    z-index: -1;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color:#fafafa;
+    border: none;
+    outline: none;
+    transition: opacity .1s ease;
+}
+
+.left-div {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    background-color: #00929B;
+    justify-content: space-around;
+    border: none !important;
+    outline: none !important;
+    width: 50vw;
+}
+
+.right-div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-around;
+    background-color: #fafafa;
+    border: none !important;
+    outline: none !important;
+    width: 50vw;
+}
+
+.text-left {
+    color: #fafafa;
+    font-size: 150px;    
+}
+
+.text-right {
+    color: #00929B;
+    font-size: 150px;
+}
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+
+.homePage {
+    font-family: Gilroy;
+    display: flex;
+    z-index: -1;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color:#fafafa;
+    border: none;
+    outline: none;
+    transition: opacity .1s ease;
+}
+
+.left-div {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    background-color: #00929B;
+    justify-content: space-around;
+    border: none !important;
+    outline: none !important;
+    width: 50vw;
+}
+
+.right-div {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-around;
+    background-color: #fafafa;
+    border: none !important;
+    outline: none !important;
+    width: 50vw;
+}
+
+.text-left {
+    color: #fafafa;
+    font-size: 150px;    
+}
+
+.text-right {
+    color: #00929B;
+    font-size: 150px;
+}
+
+}
     
     
     @media screen and (orientation:landscape)
     and (min-device-width: 300px) 
-    and (max-device-width: 600px) {
+    and (max-device-width: 568px) 
+  {
     
         .homePage {
             display: flex;
@@ -62,7 +209,7 @@ export const LightHome = styled.div`
             position: relative;
             width: 100vw;
             height: 100vh;
-            background-color: white;
+            background-color:#fafafa;
             border: none;
             outline: none;
             transition: opacity .1s ease;
@@ -84,27 +231,28 @@ export const LightHome = styled.div`
             flex-direction: column;
             text-align: left;
             justify-content: space-around;
-            background-color: black;
+            background-color: #fafafa;
             border: none !important;
             outline: none !important;
             width: 50vw;
         }
         
         .text-left {
-            color: white;
-            font-size: 4rem;    
+            color: #fafafa;
+            font-size: 50px;    
         }
         
         .text-right {
             color: #00929B;
-            font-size: 4rem;
+            font-size: 50px;
         }
         
     }
     
     @media screen and (orientation:landscape)
-    and (min-device-width: 600px) 
-    and (max-device-width: 700px) {
+    and (min-device-width: 568px) 
+    and (max-device-width: 720px) 
+  {
     
         .homePage {
             display: flex;
@@ -112,7 +260,7 @@ export const LightHome = styled.div`
             position: relative;
             width: 100vw;
             height: 100vh;
-            background-color: white;
+            background-color:#fafafa;
             border: none;
             outline: none;
             transition: opacity .1s ease;
@@ -134,28 +282,29 @@ export const LightHome = styled.div`
             flex-direction: column;
             text-align: left;
             justify-content: space-around;
-            background-color: white;
+            background-color: #fafafa;
             border: none !important;
             outline: none !important;
             width: 50vw;
         }
         
         .text-left {
-            color: white;
-            font-size: 4rem;    
+            color: #fafafa;
+            font-size: 50px;    
         }
         
         .text-right {
             color: #00929B;
-            font-size: 4rem;
+            font-size: 50px;
         }
+        
     }
     
     
     
     @media screen and (orientation:landscape)
-    and (min-device-width: 700px) 
-    and (max-device-width: 800px) {
+    and (min-device-width: 720px) 
+    and (max-device-width: 840px) {
     
         .homePage {
             display: flex;
@@ -163,7 +312,7 @@ export const LightHome = styled.div`
             position: relative;
             width: 100vw;
             height: 100vh;
-            background-color: white;
+            background-color:#fafafa;
             border: none;
             outline: none;
             transition: opacity .1s ease;
@@ -185,71 +334,23 @@ export const LightHome = styled.div`
             flex-direction: column;
             text-align: left;
             justify-content: space-around;
-            background-color: white;
+            background-color: #fafafa;
             border: none !important;
             outline: none !important;
             width: 50vw;
         }
         
         .text-left {
-            color: white;
-            font-size: 4rem;    
+            color: #fafafa;
+            font-size: 50px;    
         }
         
         .text-right {
             color: #00929B;
-            font-size: 4rem;
+            font-size: 50px;
         }
     
     
     }
     
-    @media screen and (orientation:landscape)
-    and (min-device-width: 800px) 
-    and (max-device-width: 900px) {
-    
-        .homePage {
-            display: flex;
-            z-index: -1;
-            position: relative;
-            width: 100vw;
-            height: 100vh;
-            background-color: white;
-            border: none;
-            outline: none;
-            transition: opacity .1s ease;
-        }
-        
-        .left-div {
-            display: flex;
-            flex-direction: column;
-            text-align: right;
-            background-color: #00929B;
-            justify-content: space-around;
-            border: none !important;
-            outline: none !important;
-            width: 50vw;
-        }
-        
-        .right-div {
-            display: flex;
-            flex-direction: column;
-            text-align: left;
-            justify-content: space-around;
-            background-color: white;
-            border: none !important;
-            outline: none !important;
-            width: 50vw;
-        }
-        
-        .text-left {
-            color: white;
-            font-size: 4rem;    
-        }
-        
-        .text-right {
-            color: #00929B;
-            font-size: 4rem;
-        }
-    }
  `

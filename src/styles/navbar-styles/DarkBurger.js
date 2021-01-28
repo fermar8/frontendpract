@@ -7,6 +7,9 @@ export const DarkBurger = styled.div `
     position: fixed;
     top: 15px;
     right: 20px;
+    div:hover {
+        cursor: pointer;
+    }
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;
@@ -14,7 +17,7 @@ export const DarkBurger = styled.div `
     display: none;
 
 
-    @media (min-width: 0px) {
+    @media only screen and (min-width: 0px) {
         display: flex;
         justify-content: space-around;
         flex-flow: column nowrap;
@@ -44,9 +47,8 @@ export const DarkBurger = styled.div `
         }
     }
 
-    @media (min-width: 600px) and (orientation:portrait) {
+    @media only screen and (min-width: 600px) and (max-width: 1440px) {
         margin-right: 50px;
-        margin-top: 16px;
 
     div {
         width: 30px;

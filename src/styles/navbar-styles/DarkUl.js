@@ -5,14 +5,17 @@ export const DarkUl = styled.ul`
         list-style: none;
         display: flex;
         flew-flow: row nowrap;
-
+        
+        .theme-select {
+            cursor: pointer;
+        }
 
         li {
             margin-left: 20px;
             padding-top: 10px;
         }
 
-        @media (min-width: 0px) {
+    @media only screen and (max-width: 600px){
             flex-flow: column nowrap;
             justify-content: space-around;
             background-color: black;
@@ -89,6 +92,208 @@ export const DarkUl = styled.ul`
         border: 2px solid white;
         border-radius: 4px;
         height: 30px;
+    }
+    
+    .theme-option-light {
+        font-family: FontAwesome, 'Montserrat';
+        color: black;
+        background-color: white;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .theme-option-dark {
+        font-family: FontAwesome, 'Montserrat';
+        color: white;
+        background-color: black;
+        height: 30px;
+        font-size: 14px;
+    }
+
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 1024px)  {
+            
+            align-items: center;
+            flex-flow: column nowrap;
+            justify-content: space-around;
+            background-color: black;
+            position: fixed; 
+            transform: ${({ open })  => open ? 'translateX(0)' : 'translateX(100%)'};
+            top: 0;
+            z-index: 20;
+            font-family: Gilroy;
+            font-size: 40px;
+            right: 0;
+            height: 100vh;
+            width: 100vw;
+            padding: 3.5rem 0 0 0;
+            transition: transform 0.3s ease-in-out;
+
+            .menu-main {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .contact {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                float: left;
+                width: 100vw;
+                align-items: left;
+                margin-left: 50px;
+            }
+
+            li {
+                color: white;
+                margin-left: 20px;
+            }
+
+            .portfoli {
+                text-decoration: line-through;
+            }
+
+            .links {
+                text-decoration: none;
+            }
+
+            .row-div {
+                display: flex;
+                flex-flow: row nowrap;
+            }
+
+            .coming-soon {
+                text-align: center;
+                color: white;
+                margin: 50px 0 0 0;
+                font-size: 20px;
+                font-style: italic;
+                font-family: Montserrat;
+            }
+
+.contact-text {
+                color: white;
+                margin-left: 20px;
+                font-size: 15px;
+                font-family: Montserrat;
+                text-align: left;
+            }
+
+.language-choice {
+                color: white;
+            }
+
+.theme-select {
+        font-family: FontAwesome, 'Montserrat';
+        font-size: 20px;
+        margin-left: 20px;
+        background-color: black;
+        color: white;
+        margin: 30px 0 0 20px;
+        border: 2px solid white;
+        border-radius: 4px;
+        height: 45px;
+    }
+    
+    .theme-option-light {
+        font-family: FontAwesome, 'Montserrat';
+        color: black;
+        background-color: white;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .theme-option-dark {
+        font-family: FontAwesome, 'Montserrat';
+        color: white;
+        background-color: black;
+        height: 30px;
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+            
+            align-items: center;
+            flex-flow: column nowrap;
+            justify-content: space-around;
+            background-color: black;
+            position: fixed; 
+            transform: ${({ open })  => open ? 'translateX(0)' : 'translateX(100%)'};
+            top: 0;
+            z-index: 20;
+            font-family: Gilroy;
+            font-size: 40px;
+            right: 0;
+            height: 100vh;
+            width: 50vw;
+            padding: 3.5rem 0 0 0;
+            transition: transform 0.3s ease-in-out;
+
+            .menu-main {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .contact {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                width: 50vw;
+                margin-left: 50px;
+            }
+
+            li {
+                color: white;
+                margin-left: 20px;
+            }
+
+            .portfoli {
+                text-decoration: line-through;
+            }
+
+            .links {
+                text-decoration: none;
+            }
+
+            .row-div {
+                display: flex;
+                flex-flow: row nowrap;
+            }
+
+            .coming-soon {
+                text-align: center;
+                color: white;
+                margin: 50px 0 0 0;
+                font-size: 20px;
+                font-style: italic;
+                font-family: Montserrat;
+            }
+
+.contact-text {
+                color: white;
+                margin-left: 20px;
+                font-size: 15px;
+                font-family: Montserrat;
+            }
+
+.language-choice {
+                color: white;
+            }
+
+.theme-select {
+        font-family: FontAwesome, 'Montserrat';
+        font-size: 20px;
+        margin-left: 20px;
+        background-color: black;
+        color: white;
+        margin: 30px 0 0 20px;
+        border: 2px solid white;
+        border-radius: 4px;
+        height: 45px;
     }
     
     .theme-option-light {
@@ -217,7 +422,7 @@ and (max-device-width: 568px) {
 and (min-device-width: 568px) 
 and (max-device-width: 720px) {
 
-            flex-flow: row nowrap;
+    flex-flow: row nowrap;
             justify-content: space-around;
             background-color: black;
             position: fixed; 
@@ -239,6 +444,7 @@ and (max-device-width: 720px) {
 
             .contact {
                 display: flex;
+                width: 200px;
                 flex-direction: column;
                 justify-content: flex-end;
                 margin: 0 20px 20px 0;
@@ -247,7 +453,6 @@ and (max-device-width: 720px) {
             li {
                 color: white;
                 margin-left: 20px;
-                font-size: 30px;
             }
 
             .portfoli {
@@ -290,7 +495,7 @@ and (max-device-width: 720px) {
 
 .theme-select {
         font-family: FontAwesome, 'Montserrat';
-        font-size: 20px;
+        font-size: 14px;
         margin-left: 20px;
         background-color: black;
         color: white;
@@ -322,7 +527,7 @@ and (max-device-width: 720px) {
 and (min-device-width: 720px) 
 and (max-device-width: 840px) {
 
-            flex-flow: row nowrap;
+    flex-flow: row nowrap;
             justify-content: space-around;
             background-color: black;
             position: fixed; 
@@ -344,6 +549,7 @@ and (max-device-width: 840px) {
 
             .contact {
                 display: flex;
+                width: 200px;
                 flex-direction: column;
                 justify-content: flex-end;
                 margin: 0 20px 20px 0;
@@ -352,7 +558,6 @@ and (max-device-width: 840px) {
             li {
                 color: white;
                 margin-left: 20px;
-                font-size: 30px;
             }
 
             .portfoli {
@@ -364,7 +569,7 @@ and (max-device-width: 840px) {
             }
             
             .links-group {
-                margin-top: 40px;
+                margin-top: 20px;
             }
 
             .row-div {
@@ -395,7 +600,7 @@ and (max-device-width: 840px) {
 
 .theme-select {
         font-family: FontAwesome, 'Montserrat';
-        font-size: 20px;
+        font-size: 14px;
         margin-left: 20px;
         background-color: black;
         color: white;
@@ -403,6 +608,111 @@ and (max-device-width: 840px) {
         border: 2px solid white;
         border-radius: 4px;
         height: 30px;
+    }
+    
+    .theme-option-light {
+        font-family: FontAwesome, 'Montserrat';
+        color: black;
+        background-color: white;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    .theme-option-dark {
+        font-family: FontAwesome, 'Montserrat';
+        color: white;
+        background-color: black;
+        height: 30px;
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (orientation:landscape)
+and (min-device-width: 840px) 
+and (max-device-width: 1024px) {
+
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            background-color: black;
+            position: fixed; 
+            transform: ${({ open })  => open ? 'translateX(0)' : 'translateX(100%)'};
+            top: 0;
+            z-index: 20;
+            font-family: Gilroy;
+            font-size: 26px;
+            right: 0;
+            height: 100vh;
+            width: 100vw;
+            padding: 0 0 0 0;
+            transition: transform 0.3s ease-in-out;
+
+            .menu-main {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .contact {
+                display: flex;
+                width: 300px;
+                flex-direction: column;
+                justify-content: flex-end;
+                margin: 0 50px 50px 0;
+            }
+
+            li {
+                color: white;
+                margin-left: 20px;
+                font-size: 50px;
+            }
+
+            .portfoli {
+                text-decoration: line-through;
+            }
+
+            .links {
+                text-decoration: none;
+            }
+            
+            .links-group {
+                margin-top: 40px;
+            }
+
+            .row-div {
+                display: flex;
+                flex-flow: row nowrap;
+            }
+
+            .coming-soon {
+                text-align: center;
+                color: white;
+                margin: 50px 0 0 0;
+                font-size: 20px;
+                font-style: italic;
+                font-family: Montserrat;
+            }
+
+.contact-text {
+                color: white;
+                font-size: 15px;
+                font-family: Montserrat;
+                text-align: left;
+            }
+
+.language-choice {
+                color: white;
+            }
+
+.theme-select {
+        font-family: FontAwesome, 'Montserrat';
+        font-size: 30px;
+        margin-left: 20px;
+        background-color: black;
+        color: white;
+        margin: 30px 0 0 20px;
+        border: 2px solid white;
+        border-radius: 4px;
+        height: 40px;
     }
     
     .theme-option-light {

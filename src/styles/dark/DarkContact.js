@@ -2,6 +2,83 @@ import styled from 'styled-components';
 
 export const DarkContact = styled.div`
 
+@media only screen and (max-width: 320px) {
+
+display: flex;
+flex-direction: column;
+height: 100%;
+justify-content: space-between;
+
+.contact-form {
+    height: 80vh;
+    margin: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-title {
+    color: white;
+    margin-bottom: 10px;
+    font-size: 26px;
+    font-family: 'Gilroy';
+    text-align: center;
+}
+.form-control {
+    width: 80vw;
+    height: 30px;
+    margin: 4px 0px 4px 0px;
+    font-size: 16px;
+    font-family: FontAwesome, 'Montserrat';
+    border-radius: 6px;
+}
+.form-textarea {
+    width: 80vw;
+    height: 140px;
+    max-height: 200px;
+    font-size: 16px;
+    margin: 4px 0px 4px 0px;
+    font-family: FontAwesome, 'Montserrat';
+    border-radius: 6px;
+}
+.contact-footer {
+    margin: 0 20px 20px 20px;
+}
+.contact-text {
+    color: white;
+    font-size: 10px;
+}
+
+.button-div {
+    width: 80vw;
+    float: right;
+    align-self: right;
+}
+
+.error-text {
+    color: red;
+    font-family: 'Montserrat';
+    font-size: 10px;
+    margin-bottom: 6px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    float: right;
+    font-family: 'Gilroy';
+    font-size: 20px;
+    width: 40vw;
+    margin-top: 4px;
+}
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px){
+
 display: flex;
 flex-direction: column;
 height: 100%;
@@ -23,7 +100,7 @@ justify-content: space-between;
 }
 .form-control {
     width: 80vw;
-    height: 40px;
+    height: 35px;
     margin: 4px 0px 4px 0px;
     font-size: 20px;
     font-family: FontAwesome, 'Montserrat';
@@ -31,8 +108,8 @@ justify-content: space-between;
 }
 .form-textarea {
     width: 80vw;
-    height: 160px;
-    max-height: 200px;
+    height: 25vh;
+    max-height: 120px;
     font-size: 20px;
     margin: 4px 0px 4px 0px;
     font-family: FontAwesome, 'Montserrat';
@@ -52,6 +129,13 @@ justify-content: space-between;
     align-self: right;
 }
 
+.error-text {
+    color: red;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
 .btn {
     display: flex;
     align-items: center;
@@ -61,9 +145,87 @@ justify-content: space-between;
     border: 2px solid white;
     float: right;
     font-family: 'Gilroy';
-    font-size: 20px;
-    width: 40vw;
+    font-size: 30px;
+    width: 50vw;
+    height: 50px;
     margin-top: 4px;
+}
+
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1440px) {
+
+display: flex;
+flex-direction: column;
+height: 100%;
+justify-content: space-between;
+
+.contact-form {
+    height: 80vh;
+    margin: 50px 50px 0 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-title {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 50px;
+    font-family: 'Gilroy';
+    text-align: center;
+}
+.form-control {
+    width: 60vw;
+    height: 40px;
+    margin: 8px 0px 8px 0px;
+    font-size: 30px;
+    font-family: FontAwesome, 'Montserrat';
+    border-radius: 6px;
+}
+.form-textarea {
+    width: 60vw;
+    height: 25vh;
+    max-height: 200px;
+    font-size: 30px;
+    margin: 8px 0px 8px 8px;
+    font-family: FontAwesome, 'Montserrat';
+    border-radius: 6px;
+}
+.contact-footer {
+    margin: 0 50px 50px 50px;
+}
+.contact-text {
+    color: white;
+    font-size: 15px;
+}
+
+.button-div {
+    width: 60vw;
+    float: right;
+    align-self: right;
+}
+
+.error-text {
+    color: red;
+    font-family: 'Montserrat';
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    float: right;
+    font-family: 'Gilroy';
+    font-size: 35px;
+    width: 30vw;
+    height: 60px;
+    margin-top: 8px;
+ }
 }
 
 `

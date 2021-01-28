@@ -6,6 +6,10 @@ export const DarkNav = styled.nav`
     display: flex;
     justify-content: space-between;
 
+    .lang-btn {
+        cursor:pointer;
+    }
+
     @media only screen and (max-width: 320px) {
     .logo {
         font-family: Gilroy;
@@ -36,7 +40,7 @@ export const DarkNav = styled.nav`
 
 }
 
-@media only screen and (min-width: 320px) {
+@media only screen and (min-width: 320px) and (max-width: 468px) {
     .logo {
         font-family: Gilroy;
         text-decoration: line-through;
@@ -71,11 +75,13 @@ export const DarkNav = styled.nav`
 
 }
 
-@media only screen and (min-width: 468px) {
+@media only screen and (min-width: 468px) and (max-width: 1440px) {
+
     .logo {
         font-family: Gilroy;
         text-decoration: line-through;
         padding: 15px 0 0 15px;
+        margin-left: 50px;
         font-size: 30px;
         color: white;
     }
@@ -106,10 +112,12 @@ export const DarkNav = styled.nav`
 
 }
 
-@media only screen and (min-width: 600px) and (orientation:portrait) {
+
+@media only screen and (min-width: 600px) and (max-width: 820px)
+and (orientation:portrait) {
 
     width: 100vw;
-    height: 80px;
+    height: 55px;
     display: flex;
     justify-content: space-between;
 
@@ -117,7 +125,7 @@ export const DarkNav = styled.nav`
         font-family: Gilroy;
         text-decoration: line-through;
         margin-left: 50px;
-        font-size: 50px;
+        font-size: 30px;
         color: white;
     }
 
@@ -136,12 +144,94 @@ export const DarkNav = styled.nav`
     }
     p {
         color: white;
-        font-size: 24px;
+        font-size: 18px;
     }
 
     .lang-btn {
-        font-size: 20px;
-        width: 80px;
+        font-size: 14px;
+        width: 40px;
+    }
+
+}
+
+@media only screen and (min-width: 820px) and (max-width: 1024px)
+and (orientation:portrait) {
+
+    width: 100vw;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        font-family: Gilroy;
+        text-decoration: line-through;
+        margin-left: 50px;
+        font-size: 30px;
+        color: white;
+    }
+
+    .lang-and-burger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .lang {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+    p {
+        color: white;
+        font-size: 18px;
+    }
+
+    .lang-btn {
+        font-size: 14px;
+        width: 40px;
+    }
+
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 1024px)
+and (orientation:landscape) {
+
+    width: 100vw;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+
+    .logo {
+        font-family: Gilroy;
+        text-decoration: line-through;
+        margin-left: 50px;
+        font-size: 30px;
+        color: white;
+    }
+
+    .lang-and-burger {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .lang {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 10px;
+    }
+    p {
+        color: white;
+        font-size: 18px;
+    }
+
+    .lang-btn {
+        font-size: 14px;
+        width: 40px;
     }
 
 }

@@ -65,7 +65,100 @@ margin: 20px 20px 0 20px;
   }
 }
 
-@media only screen and (min-width: 600px) and (max-width: 1280px) {
+@media only screen and (min-width: 600px) and (max-width: 820px)  {
+    .quien-page {
+background-color: #BA5116;
+display: flex;
+flex-direction: column;
+justify-content: center;
+position: relative;
+z-index: -1;
+width: 100vw;
+height: 100vh;
+border: none;
+outline: none;
+}
+
+.quien-title {
+font-family: Gilroy;
+color: #fafafa;
+font-size: 26px;
+ margin: 0 50px 20px 50px;
+}
+
+.quien-text {
+font-family: Montserrat;
+color: #9D9C9C;
+font-size: 16px;
+ margin: 0 50px 20px 50px;
+
+  }
+
+}
+
+@media only screen and (min-width: 820px) and (max-width: 1024px)  {
+    .quien-page {
+background-color: #BA5116;
+display: flex;
+flex-direction: column;
+justify-content: center;
+position: relative;
+z-index: -1;
+width: 100vw;
+height: 100vh;
+border: none;
+outline: none;
+}
+
+.quien-title {
+font-family: Gilroy;
+color: #fafafa;
+font-size: 30px;
+ margin: 0 50px 20px 50px;
+}
+
+.quien-text {
+font-family: Montserrat;
+color: #9D9C9C;
+font-size: 20px;
+ margin: 0 50px 20px 50px;
+
+  }
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1280px)  {
+    .quien-page {
+background-color: #BA5116;
+display: flex;
+flex-direction: column;
+justify-content: center;
+position: relative;
+z-index: -1;
+width: 100vw;
+height: 100vh;
+border: none;
+outline: none;
+}
+
+.quien-title {
+font-family: Gilroy;
+color: #fafafa;
+font-size: 36px;
+ margin: 0 50px 20px 50px;
+}
+
+.quien-text {
+font-family: Montserrat;
+color: #9D9C9C;
+font-size: 26px;
+ margin: 0 50px 20px 50px;
+
+  }
+
+}
+
+@media only screen and (min-width: 1280px) and (max-width: 1440px)  {
     .quien-page {
 background-color: #BA5116;
 display: flex;
@@ -164,6 +257,38 @@ and (max-device-width: 720px) {
 
 @media screen and (orientation:landscape)
 and (min-device-width: 720px) 
+and (max-device-width: 820px) {
+
+.quien-page {
+    background-color: #BA5116;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    outline: none;
+}
+
+.quien-title {
+    font-family: Gilroy;
+    color: #fafafa;
+    font-size: 30px;
+    margin: 20px 20px 0 20px;
+}
+
+.quien-text {
+    font-family: Montserrat;
+    color: #9D9C9C;
+    font-size: 20px;
+    margin: 20px 20px 0 20px;
+}
+}
+
+@media screen and (orientation:landscape)
+and (min-device-width: 720px) 
 and (max-device-width: 840px) {
 
 .quien-page {
@@ -191,6 +316,38 @@ and (max-device-width: 840px) {
     color: #9D9C9C;
     font-size: 20px;
     margin: 20px 20px 0 20px;
+}
+}
+
+@media screen and (orientation:landscape)
+and (min-device-width: 840px) 
+and (max-device-width: 1024px) {
+
+.quien-page {
+    background-color: #BA5116;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    z-index: -1;
+    width: 100vw;
+    height: 100vh;
+    border: none;
+    outline: none;
+}
+
+.quien-title {
+    font-family: Gilroy;
+    color: #fafafa;
+    font-size: 50px;
+    margin: 50px 50px 0 50px;
+}
+
+.quien-text {
+    font-family: Montserrat;
+    color: #9D9C9C;
+    font-size: 30px;
+    margin: 20px 50px 0 50px;
 }
 }
 

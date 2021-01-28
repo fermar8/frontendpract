@@ -17,7 +17,8 @@ function Contact (props) {
       telefon: 'Teléfono',
       email: 'Correo electrónico',
       missatge: 'Escribe tu mensaje',
-      enviar: 'ENVIAR'
+      enviar: 'ENVIAR',
+      error: 'Posible error de servidor.'
 
     },
     catalan: {
@@ -26,7 +27,8 @@ function Contact (props) {
       telefon: 'Telèfon',
       email: 'Correu electrònic',
       missatge: 'El teu missatge',
-      enviar: 'ENVIAR'
+      enviar: 'ENVIAR',
+      error: 'Possible error de servidor'
     },
     english : {
       contacta: 'CONTACT US',
@@ -34,7 +36,8 @@ function Contact (props) {
       telefon: 'Phone number',
       email: 'E-mail',
       missatge: 'Your message',
-      enviar: 'SUBMIT'
+      enviar: 'SUBMIT',
+      error: 'Probable server error'
     }
   }
 
@@ -69,6 +72,8 @@ function Contact (props) {
      message: ''
   });
 
+  const [showError, setShowError] = useState(false);
+
   const [submitted, setSubmitted] = useState(false);
 
   const handleInputChange = (event) => {
@@ -88,6 +93,7 @@ function Contact (props) {
               if (response.data.status === 'success') { 
               setSubmitted(true);
           } else if(response.data.status === 'fail') {
+              setShowError(true)
           }
       })
   }
@@ -104,18 +110,20 @@ function Contact (props) {
           <form className="contact-form" onSubmit={sendData} method="POST">
             <h1 className="contact-title">{content.contacta}</h1>
             <div className="form-group">
-            <input type="text" className="form-control" placeholder= {content.nom} name='nom' onChange={handleInputChange} />
+            <input type="text" required className="form-control" placeholder= {content.nom} name='nom' onChange={handleInputChange} />
             </div>
             <div className="form-group">
               <input type="text" className="form-control" placeholder={content.telefon} name='telèfon' onChange={handleInputChange} />
             </div>
             <div className="form-group">
-            <input type="email" className="form-control" placeholder={content.email} name='email' onChange={handleInputChange} />
+            <input type="email" required className="form-control" placeholder={content.email} name='email' onChange={handleInputChange} />
             </div>
             <div className="form-group">
-              <textarea className="form-textarea" rows="10" placeholder={content.missatge} name='missatge' onChange={handleInputChange} />
+              <textarea type="text" required className="form-textarea" rows="10" placeholder={content.missatge} name='missatge' onChange={handleInputChange} />
             </div>
             <div className="button-div">
+            {showError ? 
+            <p className="error-text">{content.error}</p> : null}
             <button type="submit" className="btn btn-primary"><h1 className="enviar-btn"> {content.enviar} </h1><MailOutlineIcon fontSize="large"/></button>
             </div>
           </form>

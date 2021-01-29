@@ -109,6 +109,7 @@ function Contact (props) {
         <theme.tema>
           <form className="contact-form" onSubmit={sendData} method="POST">
             <h1 className="contact-title">{content.contacta}</h1>
+            <div className="fields-container">
             <div className="form-group">
             <input type="text" required className="form-control" placeholder= {content.nom} name='nom' onChange={handleInputChange} />
             </div>
@@ -117,6 +118,7 @@ function Contact (props) {
             </div>
             <div className="form-group">
             <input type="email" required className="form-control" placeholder={content.email} name='email' onChange={handleInputChange} />
+            </div>
             </div>
             <div className="form-group">
               <textarea type="text" required className="form-textarea" rows="10" placeholder={content.missatge} name='missatge' onChange={handleInputChange} />

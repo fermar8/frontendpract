@@ -1,14 +1,11 @@
 import styled from 'styled-components'; 
 
 export const DarkContact = styled.div`
-
 @media only screen and (max-width: 320px) {
-
 display: flex;
 flex-direction: column;
 height: 100%;
 justify-content: space-between;
-
 .contact-form {
     height: 80vh;
     margin: 20px 20px 0 20px;
@@ -47,20 +44,17 @@ justify-content: space-between;
     color: white;
     font-size: 10px;
 }
-
 .button-div {
     width: 80vw;
     float: right;
     align-self: right;
 }
-
 .error-text {
     color: red;
     font-family: 'Montserrat';
     font-size: 10px;
     margin-bottom: 6px;
 }
-
 .btn {
     display: flex;
     align-items: center;
@@ -74,16 +68,12 @@ justify-content: space-between;
     width: 40vw;
     margin-top: 4px;
 }
-
 }
-
 @media only screen and (min-width: 320px) and (max-width: 600px){
-
 display: flex;
 flex-direction: column;
 height: 100%;
 justify-content: space-between;
-
 .contact-form {
     height: 80vh;
     margin: 20px 20px 0 20px;
@@ -122,20 +112,17 @@ justify-content: space-between;
     color: white;
     font-size: 10px;
 }
-
 .button-div {
     width: 80vw;
     float: right;
     align-self: right;
 }
-
 .error-text {
     color: red;
     font-family: 'Montserrat';
     font-size: 12px;
     margin-bottom: 10px;
 }
-
 .btn {
     display: flex;
     align-items: center;
@@ -150,16 +137,12 @@ justify-content: space-between;
     height: 50px;
     margin-top: 4px;
 }
-
 }
-
 @media only screen and (min-width: 600px) and (max-width: 1440px) {
-
 display: flex;
 flex-direction: column;
 height: 100%;
 justify-content: space-between;
-
 .contact-form {
     height: 80vh;
     margin: 50px 50px 0 50px;
@@ -198,20 +181,17 @@ justify-content: space-between;
     color: white;
     font-size: 15px;
 }
-
 .button-div {
     width: 60vw;
     float: right;
     align-self: right;
 }
-
 .error-text {
     color: red;
     font-family: 'Montserrat';
     font-size: 12px;
     margin-bottom: 10px;
 }
-
 .btn {
     display: flex;
     align-items: center;
@@ -227,5 +207,4 @@ justify-content: space-between;
     margin-top: 8px;
  }
 }
-
 `

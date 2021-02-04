@@ -163,7 +163,7 @@ function Navbar (props) {
             <theme.nav>
                 <div className = "logo">
                 &nbsp;ON&nbsp;
-                </div>
+                </div> 
               <div className="lang-and-burger">
                 <div className="lang">
                     <engBtn.btn className="lang-btn" value='English' onClick={e => props.handleSetLanguage(e.target.value)}>EN</engBtn.btn>

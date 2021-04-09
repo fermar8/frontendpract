@@ -19,6 +19,8 @@ function Navbar (props) {
 
     const [open, setOpen] = useState(false);
 
+    // ternary o && 
+
     let content = {
         Spanish: {
             agencia: 'La agencia.',
@@ -193,14 +195,11 @@ function Navbar (props) {
 
                     
 
-                    <select required
-                    className="theme-select"
-                    value={props.theme}
-                    onChange={e => props.handleSetTheme(e.target.value)}
-                    >
-                        <option className="theme-option-dark" value="Dark"> {content.temaFosc} &#xf186;</option>
-                        <option className="theme-option-light" value="Light">{content.temaClar} &#xf185;</option>
-                    </select>
+                  {props.theme === 'Dark' ? 
+                  <button className="theme-option-dark" value="Light" onClick={e => props.handleSetTheme(e.target.value)}>Go to Light Mode &#xf185;</button>
+ : <button className="theme-option-light" value="Dark" onClick={e => props.handleSetTheme(e.target.value)}>Go to Dark Mode &#xf186;</button>}                
+
+                   
                 </div>
 
                 <div className="contact">

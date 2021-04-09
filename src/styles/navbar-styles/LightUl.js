@@ -98,8 +98,11 @@ export const LightUl = styled.ul`
         font-family: FontAwesome, 'Montserrat';
         color: #fafafa;
         background-color: black;
-        height: 30px;
+        height: 40px;
+        border-radius: 20px;
         font-size: 14px;
+        margin: 14px 0 0 14px;
+
     }
 
     .theme-option-dark {

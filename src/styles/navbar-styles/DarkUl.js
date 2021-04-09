@@ -104,10 +104,12 @@ export const DarkUl = styled.ul`
 
     .theme-option-dark {
         font-family: FontAwesome, 'Montserrat';
-        color: white;
-        background-color: black;
-        height: 30px;
+        color: black;
+        background-color: #fafafa;
+        border-radius: 20px;
+        height: 40px;
         font-size: 14px;
+        margin: 14px 0 0 14px;
     }
 
 }

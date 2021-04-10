@@ -19,16 +19,15 @@ function Navbar (props) {
 
     const [open, setOpen] = useState(false);
 
-    // ternary o && 
-
+//canviar temaclar-fosc al css
     let content = {
         Spanish: {
             agencia: 'La agencia.',
             portfoli: 'Portfolio.',
             proximament: 'próximamente',
             contacte: 'Contacto.',
-            temaClar: 'Tema Claro',
-            temaFosc: 'Tema Oscuro'
+            temaClar: 'Usa el Tema Claro',
+            temaFosc: 'Usa el Tema Oscuro'
         },
 
         Catalan: {
@@ -36,8 +35,8 @@ function Navbar (props) {
             portfoli: 'Portfoli.',
             proximament: 'pròximament',
             contacte: 'Contacte.',
-            temaClar: 'Tema Clar',
-            temaFosc: 'Tema Fosc'
+            temaClar: 'Canvia al Tema Clar',
+            temaFosc: 'Canvia al Tema Fosc'
         },
 
         English: {
@@ -45,8 +44,8 @@ function Navbar (props) {
             portfoli: 'Portfolio.',
             proximament: 'coming soon',
             contacte: 'Contact.',
-            temaClar: 'Light Mode',
-            temaFosc: 'Dark Mode'
+            temaClar: 'Change to Light Mode',
+            temaFosc: 'Change to Dark Mode'
         }
     };
 
@@ -196,8 +195,8 @@ function Navbar (props) {
                     
 
                   {props.theme === 'Dark' ? 
-                  <button className="theme-option-dark" value="Light" onClick={e => props.handleSetTheme(e.target.value)}>Go to Light Mode &#xf185;</button>
- : <button className="theme-option-light" value="Dark" onClick={e => props.handleSetTheme(e.target.value)}>Go to Dark Mode &#xf186;</button>}                
+                  <button className="theme-option-dark" value="Light" onClick={e => props.handleSetTheme(e.target.value)}>{content.temaClar} &#xf185;</button>
+                : <button className="theme-option-light" value="Dark" onClick={e => props.handleSetTheme(e.target.value)}>{content.temaFosc} &#xf186;</button>}                
 
                    
                 </div>

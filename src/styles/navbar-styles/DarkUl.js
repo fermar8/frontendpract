@@ -207,14 +207,6 @@ export const DarkUl = styled.ul`
         font-size: 14px;
     }
 
-    .theme-option-dark {
-        font-family: FontAwesome, 'Montserrat';
-        color: white;
-        background-color: black;
-        height: 30px;
-        font-size: 14px;
-    }
-
 }
 
 @media only screen and (min-width: 1024px) and (max-width: 1440px) {

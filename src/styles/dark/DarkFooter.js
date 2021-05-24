@@ -63,7 +63,7 @@ export const DarkFooter = styled.div`
         font-size: 10px;
     }
     .footer-button {
-        margin-bottom: 20px;
+        margin-top: 6vh;
         height: 40px;
         width: 220px;
     }
@@ -133,7 +133,7 @@ export const DarkFooter = styled.div`
         font-size: 40px;
     }
     .footer-text {
-        font-size: 25px;
+        font-size: 15px;
     }
 
     .footer-button {

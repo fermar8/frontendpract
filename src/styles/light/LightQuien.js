@@ -2,18 +2,15 @@ import styled from 'styled-components';
 
 export const LightQuien = styled.div`
 
-@media only screen and (max-width: 320px) {
-
 .quien-page {
 
-    background-color: #B92606;
+    background-color: #BA5116;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
-    z-index: -1;
-    width: 100vw;
     height: 100vh;
+    width: 100%;
     border: none;
     outline: none;
     }
@@ -21,334 +18,68 @@ export const LightQuien = styled.div`
     .quien-title {
     font-family: Gilroy;
     color: #fafafa;
-    font-size: 26px;
     margin: 20px 0 0 20px;
     }
 
     .quien-text {
     font-family: Montserrat;
-    color: #fafafa;
-    font-size: 16px;
+    color: #9D9C9C;
     margin: 20px 20px 0 20px;
     }
 
-}
-
-@media only screen and (min-width: 320px) and (max-width: 600px) {
-
-.quien-page {
-background-color: #B92606;
-display: flex;
-flex-direction: column;
-justify-content: center;
-position: relative;
-z-index: -1;
-width: 100vw;
-height: 100vh;
-border: none;
-outline: none;
-}
-
-.quien-title {
-font-family: Gilroy;
-color: #fafafa;
-font-size: 28px;
-margin: 20px 20px 0 20px;
-}
-
-.quien-text {
-font-family: Montserrat;
-color: #fafafa;
-font-size: 18px;
-margin: 20px 20px 0 20px;
-
-  }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 820px)  {
-    .quien-page {
-background-color: #B92606;
-display: flex;
-flex-direction: column;
-justify-content: center;
-position: relative;
-z-index: -1;
-width: 100vw;
-height: 100vh;
-border: none;
-outline: none;
-}
-
-.quien-title {
-font-family: Gilroy;
-color: #fafafa;
-font-size: 26px;
- margin: 0 50px 20px 50px;
-}
-
-.quien-text {
-font-family: Montserrat;
-color: #fafafa;
-font-size: 16px;
- margin: 0 50px 20px 50px;
+    @media only screen and (max-width: 576px) {
+    .quien-title {
+        font-size: 26px;
+    }
+    .quien-text {
+        font-size: 16px;
+    }
 
   }
 
+  @media only screen and (min-width: 576px) and (max-width: 768px) {
+    .quien-title {
+        font-size: 30px;
+    }
+    .quien-text {
+        font-size: 20px;
+    }
 }
 
-@media only screen and (min-width: 820px) and (max-width: 1024px)  {
-    .quien-page {
-background-color: #B92606;
-display: flex;
-flex-direction: column;
-justify-content: center;
-position: relative;
-z-index: -1;
-width: 100vw;
-height: 100vh;
-border: none;
-outline: none;
+ @media only screen and (min-width: 768px) and (max-width: 992px) {
+    .quien-title {
+        font-size: 30px;
+    }
+    .quien-text {
+        font-size: 20px;
+    }
 }
 
-.quien-title {
-font-family: Gilroy;
-color: #fafafa;
-font-size: 30px;
- margin: 0 50px 20px 50px;
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .quien-title {
+        font-size: 40px;
+    }
+    .quien-text {
+        font-size: 30px;
+    }
 }
 
-.quien-text {
-font-family: Montserrat;
-color: #fafafa;
-font-size: 20px;
- margin: 0 50px 20px 50px;
-
-  }
-
+@media only screen and (min-width: 1200px) and (max-width: 1468px){
+    .quien-title {
+        font-size: 40px;
+    }
+    .quien-text {
+        font-size: 30px;
+    }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1280px)  {
-    .quien-page {
-background-color: #B92606;
-display: flex;
-flex-direction: column;
-justify-content: center;
-position: relative;
-z-index: -1;
-width: 100vw;
-height: 100vh;
-border: none;
-outline: none;
-}
-
-.quien-title {
-font-family: Gilroy;
-color: #fafafa;
-font-size: 36px;
- margin: 0 50px 20px 50px;
-}
-
-.quien-text {
-font-family: Montserrat;
-color: #fafafa;
-font-size: 26px;
- margin: 0 50px 20px 50px;
-
-  }
-
-}
-
-@media only screen and (min-width: 1280px) and (max-width: 1440px)  {
-    .quien-page {
-background-color: #B92606;
-display: flex;
-flex-direction: column;
-justify-content: center;
-position: relative;
-z-index: -1;
-width: 100vw;
-height: 100vh;
-border: none;
-outline: none;
-}
-
-.quien-title {
-font-family: Gilroy;
-color: #fafafa;
-font-size: 50px;
- margin: 0 50px 20px 50px;
-}
-
-.quien-text {
-font-family: Montserrat;
-color: #fafafa;
-font-size: 30px;
- margin: 0 50px 20px 50px;
-
-  }
-
-}
-
-
-@media screen and (orientation:landscape)
-and (min-device-width: 300px) 
-and (max-device-width: 568px)  {
-
-.quien-page {
-    background-color: #B92606;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    border: none;
-    outline: none;
-}
-
-.quien-title {
-    font-family: Gilroy;
-    color: #fafafa;
-    font-size: 26px;
-    margin: 20px 20px 0 20px;
-}
-
-.quien-text {
-    font-family: Montserrat;
-    color: #fafafa;
-    font-size: 16px;
-    margin: 20px 20px 0 20px;
-}
-
-}
-
-@media screen and (orientation:landscape)
-and (min-device-width: 568px) 
-and (max-device-width: 720px) {
-
-.quien-page {
-    background-color: #B92606;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    border: none;
-    outline: none;
-}
-
-.quien-title {
-    font-family: Gilroy;
-    color: #fafafa;
-    font-size: 30px;
-    margin: 20px 20px 0 20px;
-}
-
-.quien-text {
-    font-family: Montserrat;
-    color: #fafafa;
-    font-size: 20px;
-    margin: 20px 20px 0 20px;
-}
-}
-
-@media screen and (orientation:landscape)
-and (min-device-width: 720px) 
-and (max-device-width: 820px) {
-
-.quien-page {
-    background-color: #B92606;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    border: none;
-    outline: none;
-}
-
-.quien-title {
-    font-family: Gilroy;
-    color: #fafafa;
-    font-size: 30px;
-    margin: 20px 20px 0 20px;
-}
-
-.quien-text {
-    font-family: Montserrat;
-    color: #fafafa;
-    font-size: 20px;
-    margin: 20px 20px 0 20px;
-}
-}
-
-@media screen and (orientation:landscape)
-and (min-device-width: 720px) 
-and (max-device-width: 840px) {
-
-.quien-page {
-    background-color: #B92606;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    border: none;
-    outline: none;
-}
-
-.quien-title {
-    font-family: Gilroy;
-    color: #fafafa;
-    font-size: 30px;
-    margin: 20px 20px 0 20px;
-}
-
-.quien-text {
-    font-family: Montserrat;
-    color: #fafafa;
-    font-size: 20px;
-    margin: 20px 20px 0 20px;
-}
-}
-
-@media screen and (orientation:landscape)
-and (min-device-width: 840px) 
-and (max-device-width: 1024px) {
-
-.quien-page {
-    background-color: #B92606;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    position: relative;
-    z-index: -1;
-    width: 100vw;
-    height: 100vh;
-    border: none;
-    outline: none;
-}
-
-.quien-title {
-    font-family: Gilroy;
-    color: #fafafa;
-    font-size: 50px;
-    margin: 50px 50px 0 50px;
-}
-
-.quien-text {
-    font-family: Montserrat;
-    color: #fafafa;
-    font-size: 30px;
-    margin: 20px 50px 0 50px;
-}
+@media only screen and (min-width: 1468px){
+    .quien-title {
+        font-size: 75px;
+    }
+    .quien-text {
+        font-size: 40px;
+    }
 }
 
 `

@@ -1,5 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { Container, Row, Col } from 'reactstrap';
+
 
 import { DarkHome } from './../styles/dark/DarkHome';
 import { DarkQuien } from './../styles/dark/DarkQuien';
@@ -139,29 +141,44 @@ function Home (props) {
         <Fragment>
             <div>
               <theme.home>
-                <div id="#trigger-view" data-aos-anchor="#trigger-view" className="homePage">
-                    <div id ="trigger-view" data-aos="zoom-in" className="left-div"><p className="text-left">HO</p></div>
+              <Container fluid={true} >
+              <Row noGutters={true} className="no-margin">
+              <Col xs="6" style={{padding: 0, margin: 0}}>
+                 <div id ="trigger-view" data-aos="zoom-in" className="left-div"><p className="text-left">HO</p></div>
+              </Col>
+              <Col xs="6" style={{padding: 0, margin: 0}}>
                     <div id ="trigger-view" data-aos="zoom-in" className="right-div"><p className="text-right">LA</p></div>
-                </div>
+              </Col>
+              </Row> 
+              </Container>
               </theme.home>
               <theme.quien>
+              <Container fluid={true} >
+              <Row noGutters={true} >
+              <Col xs="12" style={{padding: 0, margin: 0}}>
                 <div id="about" data-aos="zoom-in" className="quien-page">
                     <h1 className="quien-title">{content.quienTitle}</h1>
                     <p className="quien-text">{content.quienText} </p>
                 </div>
+              </Col>
+              </Row>
+              </Container>
               </theme.quien>
-            <div>
               <theme.que>
+              <Container fluid={true}>
+              <Row noGutters={true} className="no-margin">
+              <Col xs="12" md="8" style={{padding: 0, margin: 0}}>
                 <div className="que-page" data-aos="zoom-in">
                         <h1 className="que-title">{content.queTitle}</h1>
                         <p className="que-text">{content.queTextOne}</p>
                         <p className="que-text">{content.queTextTwo}</p>
                         <p className="que-text">{content.queTextThree}</p>
-
-
                 </div>
+              </Col>
+              <Col xs="12" md="4" style={{padding: 0, margin: 0}}>
                 <div className="other-pages">
-                
+                  <div className="top-bot-space"></div>
+
                   <div className="other-design" data-aos="zoom-in">
                     <h1 className="other-title">{content.designTitle}</h1>
                     <p className="other-text">{content.designTextOne}</p>
@@ -182,19 +199,36 @@ function Home (props) {
                     <p className="other-text">{content.markTextTwo}</p>
                     <p className="other-text">{content.markTextThree}</p>
                    </div>
+
+                   <div className="top-bot-space"></div>
                 
                 </div>
+              </Col>
+              </Row>
+              </Container>
               </theme.que>
-            </div>
               <theme.footer>
-                  <div className="footer">
-                    <Link style={{textDecoration:"none"}} to={'/contact'}><button className="footer-button"><h1 className="footer-title"> {content.contact} </h1><MailOutlineIcon fontSize="large"/></button></Link>
+              <Container className="footer-cont" fluid={true}>
+              <Row noGutters={true} style={{margin: "0 0 40px 0", padding: "0"}}>
+                  <Col xs="3" sm="1"></Col>
+                  <Col xs="9" sm="6" className="margin-top" style={{padding: 0, margin: 0}}>
+                    <button className="footer-button">
+                    <Link className="btn-link" to={'/contact'}>
+                      <h1 className="footer-title"> {content.contact}</h1>
+                      <MailOutlineIcon fontSize="large"/>
+                      </Link>
+                    </button>
+                  </Col>
+                  <Col xs="3" sm=""></Col>
+                  <Col xs="6" sm="4" className="margin-top" style={{padding: 0, margin: 0}}>
                     <div className="footer-contact">
                         <p className="footer-text">16 Place Cormontaigne, 59000 Lille France</p>
                         <p className="footer-text">+33(0)3 20 88 11 59</p>
                         <p className="footer-text">contact@wokine.com</p>
-                   </div>
-                </div>
+                    </div>
+                  </Col>
+              </Row>
+              </Container>
               </theme.footer>
             </div>
         </Fragment>

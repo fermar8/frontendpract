@@ -1,4 +1,5 @@
 import React, { Fragment, useState } from 'react';
+import { Container, Row, Col } from 'reactstrap';
 import { Redirect } from 'react-router-dom';
 import { DarkContact } from '../styles/dark/DarkContact';
 import { LightContact } from '../styles/light/LightContact';
@@ -107,6 +108,8 @@ function Contact (props) {
       return(
        <Fragment>
         <theme.tema>
+        <Container>
+        <Row>
           <form className="contact-form" onSubmit={sendData} method="POST">
             <h1 className="contact-title">{content.contacta}</h1>
             <div className="fields-container">
@@ -129,12 +132,22 @@ function Contact (props) {
             <button type="submit" className="btn btn-primary"><h1 className="enviar-btn"> {content.enviar} </h1><MailOutlineIcon fontSize="large"/></button>
             </div>
           </form>
-
+          </Row>
+          </Container>
+          <Container fluid={true}>
+          <Row>
+          <Col xs="0"></Col>
+          <Col>
             <div className="contact-footer">
                         <p className="contact-text">16 Place Cormontaigne, 59000 Lille France</p>
                         <p className="contact-text">+33(0)3 20 88 11 59</p>
                         <p className="contact-text">contact@wokine.com</p>
             </div>
+          </Col>
+          <Col></Col>
+          </Row> 
+          </Container>
+
           </theme.tema>
       </Fragment>
       );

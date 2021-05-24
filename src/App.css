@@ -28,7 +28,7 @@ body {
   width: 100%;
   display: flex;
   flex-direction: column;
-  background-color: black
+  background-color: black;
 }
 ol, ul {
 	list-style: none;
@@ -47,9 +47,3 @@ table {
 }
 /* CSS RESET */
 
-.App {
-	display: flex;
-	flex-direction: column;
-	height: 100%;
-	width: 100%;
-}

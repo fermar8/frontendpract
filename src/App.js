@@ -4,6 +4,8 @@ import { Switch,  Route } from 'react-router-dom';
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Success from './pages/Success';
+import { DarkBody } from './styles/dark/DarkBody';
+import { LightBody } from './styles/light/LightBody';
 import './App.css';
 
 function App() {
@@ -14,10 +16,24 @@ function App() {
   let themeStoredInLocalStorage = localStorage.getItem('theme');
   let [theme, setTheme] = useState ( themeStoredInLocalStorage ? themeStoredInLocalStorage : 'Dark');
 
+  let tema = {
+    dark: {
+        body: DarkBody  
+    },
 
+    light: {
+        body: LightBody  
+    }
+}
+
+if (theme === 'Dark') {
+  tema = tema.dark;
+} else {
+  tema = tema.light;
+}
 
   return (
-    <div className="App">
+    <tema.body>
         <Navbar language={language}
                 handleSetLanguage={language => {setLanguage(language);
                 storeLanguageInLocalStorage(language);
@@ -34,7 +50,7 @@ function App() {
           <Route exact path="/contact" render={(props) => <Contact {...props} language={language} theme={theme} />} />
           <Route exact path='/success' render={(props) => <Success {...props} language={language} theme={theme} />} />
         </Switch>
-    </div>
+    </tema.body>
   );
   }
 

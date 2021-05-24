@@ -4,36 +4,41 @@ import styled from 'styled-components';
 export const DarkUl = styled.ul`
         list-style: none;
         display: flex;
-        flew-flow: row nowrap;
+        flex-flow: column nowrap;
+        justify-content: space-around;
+        position: fixed; 
+        transform: ${({ open })  => open ? 'translateX(0)' : 'translateX(100%)'};
+        z-index: 20;
+        font-family: Gilroy;
+        font-size: 26px;
+        width: 100%;
+        
+        transition: transform 0.3s ease-in-out;
         
         .theme-select {
             cursor: pointer;
         }
 
-        li {
-            margin-left: 20px;
-            padding-top: 10px;
+        .columna-ul {
+            height: 100vh;
+            width: 100%;
+            background-color: black;
         }
 
-    @media only screen and (max-width: 600px){
-            flex-flow: column nowrap;
-            justify-content: space-around;
-            background-color: black;
-            position: fixed; 
-            transform: ${({ open })  => open ? 'translateX(0)' : 'translateX(100%)'};
-            top: 0;
-            z-index: 20;
-            font-family: Gilroy;
-            font-size: 26px;
-            right: 0;
-            height: 100vh;
-            width: 100vw;
-            padding: 3.5rem 0 0 0;
-            transition: transform 0.3s ease-in-out;
 
-            .menu-main {
+            .links-group {
                 display: flex;
-                justify-content: space-between;
+                flex-direction: column;
+                justify-content: center;
+                background-color: black;
+                height: 100vh;
+                width: 100vw;
+            }
+
+            .no-margin {
+                margin: 0px !important;
+                padding: 0px !important;
+                
             }
 
             .contact {
@@ -45,7 +50,8 @@ export const DarkUl = styled.ul`
 
             li {
                 color: white;
-                margin-left: 20px;
+                margin: 10px 0 0 20px;
+                
             }
 
             .portfoli {
@@ -72,7 +78,6 @@ export const DarkUl = styled.ul`
 
 .contact-text {
                 color: white;
-                margin-left: 20px;
                 font-size: 10px;
                 font-family: Montserrat;
                 text-align: left;
@@ -85,10 +90,8 @@ export const DarkUl = styled.ul`
 .theme-select {
         font-family: FontAwesome, 'Montserrat';
         font-size: 14px;
-        margin-left: 20px;
         background-color: black;
         color: white;
-        margin: 30px 0 0 20px;
         border: 2px solid white;
         border-radius: 4px;
         height: 30px;
@@ -97,8 +100,10 @@ export const DarkUl = styled.ul`
     .theme-option-light {
         font-family: FontAwesome, 'Montserrat';
         color: black;
+        width: 200px;
         background-color: white;
-        height: 30px;
+        border-radius: 20px;
+        height: 40px;
         font-size: 14px;
     }
 
@@ -107,624 +112,12 @@ export const DarkUl = styled.ul`
         color: black;
         background-color: #fafafa;
         border-radius: 20px;
+        width: 200px;
         height: 40px;
         font-size: 14px;
-        margin: 14px 0 0 14px;
     }
 
-}
 
 
-@media only screen and (min-width: 600px) and (max-width: 1024px)  {
-            
-            align-items: center;
-            flex-flow: column nowrap;
-            justify-content: space-around;
-            background-color: black;
-            position: fixed; 
-            transform: ${({ open })  => open ? 'translateX(0)' : 'translateX(100%)'};
-            top: 0;
-            z-index: 20;
-            font-family: Gilroy;
-            font-size: 40px;
-            right: 0;
-            height: 100vh;
-            width: 100vw;
-            padding: 3.5rem 0 0 0;
-            transition: transform 0.3s ease-in-out;
-
-            .menu-main {
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .contact {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                float: left;
-                width: 100vw;
-                align-items: left;
-                margin-left: 50px;
-            }
-
-            li {
-                color: white;
-                margin-left: 20px;
-            }
-
-            .portfoli {
-                text-decoration: line-through;
-            }
-
-            .links {
-                text-decoration: none;
-            }
-
-            .row-div {
-                display: flex;
-                flex-flow: row nowrap;
-            }
-
-            .coming-soon {
-                text-align: center;
-                color: white;
-                margin: 50px 0 0 0;
-                font-size: 20px;
-                font-style: italic;
-                font-family: Montserrat;
-            }
-
-.contact-text {
-                color: white;
-                margin-left: 20px;
-                font-size: 15px;
-                font-family: Montserrat;
-                text-align: left;
-            }
-
-.language-choice {
-                color: white;
-            }
-
-.theme-select {
-        font-family: FontAwesome, 'Montserrat';
-        font-size: 20px;
-        margin-left: 20px;
-        background-color: black;
-        color: white;
-        margin: 30px 0 0 20px;
-        border: 2px solid white;
-        border-radius: 4px;
-        height: 45px;
-    }
-    
-    .theme-option-light {
-        font-family: FontAwesome, 'Montserrat';
-        color: black;
-        background-color: white;
-        height: 30px;
-        font-size: 14px;
-    }
-
-}
-
-@media only screen and (min-width: 1024px) and (max-width: 1440px) {
-            
-            align-items: center;
-            flex-flow: column nowrap;
-            justify-content: space-around;
-            background-color: black;
-            position: fixed; 
-            transform: ${({ open })  => open ? 'translateX(0)' : 'translateX(100%)'};
-            top: 0;
-            z-index: 20;
-            font-family: Gilroy;
-            font-size: 40px;
-            right: 0;
-            height: 100vh;
-            width: 50vw;
-            padding: 3.5rem 0 0 0;
-            transition: transform 0.3s ease-in-out;
-
-            .menu-main {
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .contact {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                width: 50vw;
-                margin-left: 50px;
-            }
-
-            li {
-                color: white;
-                margin-left: 20px;
-            }
-
-            .portfoli {
-                text-decoration: line-through;
-            }
-
-            .links {
-                text-decoration: none;
-            }
-
-            .row-div {
-                display: flex;
-                flex-flow: row nowrap;
-            }
-
-            .coming-soon {
-                text-align: center;
-                color: white;
-                margin: 50px 0 0 0;
-                font-size: 20px;
-                font-style: italic;
-                font-family: Montserrat;
-            }
-
-.contact-text {
-                color: white;
-                margin-left: 20px;
-                font-size: 15px;
-                font-family: Montserrat;
-            }
-
-.language-choice {
-                color: white;
-            }
-
-.theme-select {
-        font-family: FontAwesome, 'Montserrat';
-        font-size: 20px;
-        margin-left: 20px;
-        background-color: black;
-        color: white;
-        margin: 30px 0 0 20px;
-        border: 2px solid white;
-        border-radius: 4px;
-        height: 45px;
-    }
-    
-    .theme-option-light {
-        font-family: FontAwesome, 'Montserrat';
-        color: black;
-        background-color: white;
-        height: 30px;
-        font-size: 14px;
-    }
-
-    .theme-option-dark {
-        font-family: FontAwesome, 'Montserrat';
-        color: white;
-        background-color: black;
-        height: 30px;
-        font-size: 14px;
-    }
-
-}
-
-@media screen and (orientation:landscape)
-and (min-device-width: 300px) 
-and (max-device-width: 568px) {
-
-            flex-flow: row nowrap;
-            justify-content: space-around;
-            background-color: black;
-            position: fixed; 
-            transform: ${({ open })  => open ? 'translateX(0)' : 'translateX(100%)'};
-            top: 0;
-            z-index: 20;
-            font-family: Gilroy;
-            font-size: 26px;
-            right: 0;
-            height: 100vh;
-            width: 100vw;
-            padding: 0 0 0 0;
-            transition: transform 0.3s ease-in-out;
-
-            .menu-main {
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .contact {
-                display: flex;
-                flex-direction: column;
-                justify-content: flex-end;
-                margin: 0 20px 20px 0;
-            }
-
-            li {
-                color: white;
-                margin-left: 20px;
-            }
-
-            .portfoli {
-                text-decoration: line-through;
-            }
-
-            .links {
-                text-decoration: none;
-            }
-            
-            .links-group {
-                margin-top: 20px;
-            }
-
-            .row-div {
-                display: flex;
-                flex-flow: row nowrap;
-            }
-
-            .coming-soon {
-                text-align: center;
-                color: white;
-                margin: 30px 0 0 0;
-                font-size: 14px;
-                font-style: italic;
-                font-family: Montserrat;
-            }
-
-.contact-text {
-                color: white;
-                margin-left: 20px;
-                font-size: 10px;
-                font-family: Montserrat;
-                text-align: left;
-            }
-
-.language-choice {
-                color: white;
-            }
-
-.theme-select {
-        font-family: FontAwesome, 'Montserrat';
-        font-size: 14px;
-        margin-left: 20px;
-        background-color: black;
-        color: white;
-        margin: 30px 0 0 20px;
-        border: 2px solid white;
-        border-radius: 4px;
-        height: 30px;
-    }
-    
-    .theme-option-light {
-        font-family: FontAwesome, 'Montserrat';
-        color: black;
-        background-color: white;
-        height: 30px;
-        font-size: 14px;
-    }
-
-    .theme-option-dark {
-        font-family: FontAwesome, 'Montserrat';
-        color: white;
-        background-color: black;
-        height: 30px;
-        font-size: 14px;
-    }
-
-}
-
-@media screen and (orientation:landscape)
-and (min-device-width: 568px) 
-and (max-device-width: 720px) {
-
-    flex-flow: row nowrap;
-            justify-content: space-around;
-            background-color: black;
-            position: fixed; 
-            transform: ${({ open })  => open ? 'translateX(0)' : 'translateX(100%)'};
-            top: 0;
-            z-index: 20;
-            font-family: Gilroy;
-            font-size: 26px;
-            right: 0;
-            height: 100vh;
-            width: 100vw;
-            padding: 0 0 0 0;
-            transition: transform 0.3s ease-in-out;
-
-            .menu-main {
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .contact {
-                display: flex;
-                width: 200px;
-                flex-direction: column;
-                justify-content: flex-end;
-                margin: 0 20px 20px 0;
-            }
-
-            li {
-                color: white;
-                margin-left: 20px;
-            }
-
-            .portfoli {
-                text-decoration: line-through;
-            }
-
-            .links {
-                text-decoration: none;
-            }
-            
-            .links-group {
-                margin-top: 20px;
-            }
-
-            .row-div {
-                display: flex;
-                flex-flow: row nowrap;
-            }
-
-            .coming-soon {
-                text-align: center;
-                color: white;
-                margin: 30px 0 0 0;
-                font-size: 14px;
-                font-style: italic;
-                font-family: Montserrat;
-            }
-
-.contact-text {
-                color: white;
-                margin-left: 20px;
-                font-size: 10px;
-                font-family: Montserrat;
-                text-align: left;
-            }
-
-.language-choice {
-                color: white;
-            }
-
-.theme-select {
-        font-family: FontAwesome, 'Montserrat';
-        font-size: 14px;
-        margin-left: 20px;
-        background-color: black;
-        color: white;
-        margin: 30px 0 0 20px;
-        border: 2px solid white;
-        border-radius: 4px;
-        height: 30px;
-    }
-    
-    .theme-option-light {
-        font-family: FontAwesome, 'Montserrat';
-        color: black;
-        background-color: white;
-        height: 30px;
-        font-size: 14px;
-    }
-
-    .theme-option-dark {
-        font-family: FontAwesome, 'Montserrat';
-        color: white;
-        background-color: black;
-        height: 30px;
-        font-size: 14px;
-    }
-
-}
-
-@media screen and (orientation:landscape)
-and (min-device-width: 720px) 
-and (max-device-width: 840px) {
-
-    flex-flow: row nowrap;
-            justify-content: space-around;
-            background-color: black;
-            position: fixed; 
-            transform: ${({ open })  => open ? 'translateX(0)' : 'translateX(100%)'};
-            top: 0;
-            z-index: 20;
-            font-family: Gilroy;
-            font-size: 26px;
-            right: 0;
-            height: 100vh;
-            width: 100vw;
-            padding: 0 0 0 0;
-            transition: transform 0.3s ease-in-out;
-
-            .menu-main {
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .contact {
-                display: flex;
-                width: 200px;
-                flex-direction: column;
-                justify-content: flex-end;
-                margin: 0 20px 20px 0;
-            }
-
-            li {
-                color: white;
-                margin-left: 20px;
-            }
-
-            .portfoli {
-                text-decoration: line-through;
-            }
-
-            .links {
-                text-decoration: none;
-            }
-            
-            .links-group {
-                margin-top: 20px;
-            }
-
-            .row-div {
-                display: flex;
-                flex-flow: row nowrap;
-            }
-
-            .coming-soon {
-                text-align: center;
-                color: white;
-                margin: 30px 0 0 0;
-                font-size: 14px;
-                font-style: italic;
-                font-family: Montserrat;
-            }
-
-.contact-text {
-                color: white;
-                margin-left: 20px;
-                font-size: 10px;
-                font-family: Montserrat;
-                text-align: left;
-            }
-
-.language-choice {
-                color: white;
-            }
-
-.theme-select {
-        font-family: FontAwesome, 'Montserrat';
-        font-size: 14px;
-        margin-left: 20px;
-        background-color: black;
-        color: white;
-        margin: 30px 0 0 20px;
-        border: 2px solid white;
-        border-radius: 4px;
-        height: 30px;
-    }
-    
-    .theme-option-light {
-        font-family: FontAwesome, 'Montserrat';
-        color: black;
-        background-color: white;
-        height: 30px;
-        font-size: 14px;
-    }
-
-    .theme-option-dark {
-        font-family: FontAwesome, 'Montserrat';
-        color: white;
-        background-color: black;
-        height: 30px;
-        font-size: 14px;
-    }
-
-}
-
-@media screen and (orientation:landscape)
-and (min-device-width: 840px) 
-and (max-device-width: 1024px) {
-
-            flex-flow: row nowrap;
-            justify-content: space-around;
-            background-color: black;
-            position: fixed; 
-            transform: ${({ open })  => open ? 'translateX(0)' : 'translateX(100%)'};
-            top: 0;
-            z-index: 20;
-            font-family: Gilroy;
-            font-size: 26px;
-            right: 0;
-            height: 100vh;
-            width: 100vw;
-            padding: 0 0 0 0;
-            transition: transform 0.3s ease-in-out;
-
-            .menu-main {
-                display: flex;
-                justify-content: space-between;
-            }
-
-            .contact {
-                display: flex;
-                width: 300px;
-                flex-direction: column;
-                justify-content: flex-end;
-                margin: 0 50px 50px 0;
-            }
-
-            li {
-                color: white;
-                margin-left: 20px;
-                font-size: 50px;
-            }
-
-            .portfoli {
-                text-decoration: line-through;
-            }
-
-            .links {
-                text-decoration: none;
-            }
-            
-            .links-group {
-                margin-top: 40px;
-            }
-
-            .row-div {
-                display: flex;
-                flex-flow: row nowrap;
-            }
-
-            .coming-soon {
-                text-align: center;
-                color: white;
-                margin: 50px 0 0 0;
-                font-size: 20px;
-                font-style: italic;
-                font-family: Montserrat;
-            }
-
-.contact-text {
-                color: white;
-                font-size: 15px;
-                font-family: Montserrat;
-                text-align: left;
-            }
-
-.language-choice {
-                color: white;
-            }
-
-.theme-select {
-        font-family: FontAwesome, 'Montserrat';
-        font-size: 30px;
-        margin-left: 20px;
-        background-color: black;
-        color: white;
-        margin: 30px 0 0 20px;
-        border: 2px solid white;
-        border-radius: 4px;
-        height: 40px;
-    }
-    
-    .theme-option-light {
-        font-family: FontAwesome, 'Montserrat';
-        color: black;
-        background-color: white;
-        height: 30px;
-        font-size: 14px;
-    }
-
-    .theme-option-dark {
-        font-family: FontAwesome, 'Montserrat';
-        color: white;
-        background-color: black;
-        height: 30px;
-        font-size: 14px;
-    }
-
-}
 
 `

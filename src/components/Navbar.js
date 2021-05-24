@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Container, Row, Col } from 'reactstrap';
 
 import { DarkNav } from '../styles/navbar-styles/DarkNav';
 import { DarkBurger } from '../styles/navbar-styles/DarkBurger';
@@ -26,8 +27,8 @@ function Navbar (props) {
             portfoli: 'Portfolio.',
             proximament: 'próximamente',
             contacte: 'Contacto.',
-            temaClar: 'Usa el Tema Claro',
-            temaFosc: 'Usa el Tema Oscuro'
+            temaClar: 'Tema Claro',
+            temaFosc: 'Tema Oscuro'
         },
 
         Catalan: {
@@ -35,8 +36,8 @@ function Navbar (props) {
             portfoli: 'Portfoli.',
             proximament: 'pròximament',
             contacte: 'Contacte.',
-            temaClar: 'Canvia al Tema Clar',
-            temaFosc: 'Canvia al Tema Fosc'
+            temaClar: 'Tema Clar',
+            temaFosc: 'Tema Fosc'
         },
 
         English: {
@@ -44,8 +45,8 @@ function Navbar (props) {
             portfoli: 'Portfolio.',
             proximament: 'coming soon',
             contacte: 'Contact.',
-            temaClar: 'Change to Light Mode',
-            temaFosc: 'Change to Dark Mode'
+            temaClar: 'Light Mode',
+            temaFosc: 'Dark Mode'
         }
     };
 
@@ -162,10 +163,14 @@ function Navbar (props) {
 
         return (
             <theme.nav>
+            <Container fluid={true} >
+            <Row>
+             <Col xs="3" style={{padding: 0, margin: 0}}>
                 <div className = "logo">
                 &nbsp;ON&nbsp;
                 </div> 
-              <div className="lang-and-burger">
+             </Col>
+             <Col xs="6" style={{padding: 0, margin: 0}}>
                 <div className="lang">
                     <engBtn.btn className="lang-btn" value='English' onClick={e => props.handleSetLanguage(e.target.value)}>EN</engBtn.btn>
                     <p>/</p>
@@ -173,15 +178,28 @@ function Navbar (props) {
                     <p>/</p>
                     <catBtn.btn className="lang-btn" value='Catalan' onClick={e => props.handleSetLanguage(e.target.value)}>CAT</catBtn.btn>
                 </div>
+            </Col>
+            <Col xs="3" style={{padding: 0, margin: 0}}>
                 <theme.burger open={open} onClick={() => setOpen(!open)}>
                     <div/>
                     <div/>
                     <div/>  
                 </theme.burger>
-               </div>
-
-                <div className="menu-main">
+            </Col>
+            </Row>
+            </Container>   
             <theme.ul  open={open}>
+            <Container fluid={true} >
+            <Row noGutters={true} >
+            <Col xs="0" sm="0" md="0" lg="6" xl="6" style={{padding: 0, margin: 0}}>
+                <div className="transparent"></div>
+            </Col>
+            <Col xs="12" sm="12" md="12" lg="6" xl="6" className="no-margin">
+            <Row noGutters={true} className="no-margin">
+            <Col xs="3" md="3" style={{padding: 0, margin: 0}}>
+                <div className="columna-ul"></div>
+            </Col>
+            <Col xs="6" md="6" className="no-margin" >
                  <div className="links-group">
                     <Link className="links" to={'/'} onClick={() => setOpen(!open)}><li>{content.agencia}</li></Link>
 
@@ -190,25 +208,31 @@ function Navbar (props) {
                     <div className="row-div">
                     <Link className="links" to={'/contact'} onClick={() => setOpen(!open)}><li className="portfoli">{content.portfoli}</li></Link>
                     <p className="coming-soon">{content.proximament}</p>
-                  </div>
+                    </div>
+            
 
                     
-
+            
                   {props.theme === 'Dark' ? 
                   <button className="theme-option-dark" value="Light" onClick={e => props.handleSetTheme(e.target.value)}>{content.temaClar} &#xf185;</button>
                 : <button className="theme-option-light" value="Dark" onClick={e => props.handleSetTheme(e.target.value)}>{content.temaFosc} &#xf186;</button>}                
 
                    
                 </div>
+            
 
                 <div className="contact">
                     <p className="contact-text">16 Place Cormontaigne, 59000 Lille France</p>
                     <p className="contact-text">+33(0)3 20 88 11 59</p>
                     <p className="contact-text">contact@wokine.com</p>
                 </div>
-
+            </Col>
+            <Col xs="3" md="3" className="no-margin"></Col>
+            </Row>
+            </Col>
+            </Row>
+            </Container>
             </theme.ul>
-        </div>
             </theme.nav>
         )
     

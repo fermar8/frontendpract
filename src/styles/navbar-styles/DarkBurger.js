@@ -45,34 +45,7 @@ export const DarkBurger = styled.div `
             transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'}
         }
         }
-    }
-
-    @media only screen and (min-width: 600px) and (max-width: 1440px) {
-        margin-right: 50px;
-
-    div {
-        width: 30px;
-        height: 4px;
-        margin-bottom: 4px;
-        background-color: ${({ open }) => open ? 'grey' : 'white'};
-        border-radius: 10px;
-        transform-origin: 1px;
-        transition: all 0.3s linear;
-
-
-        &:nth-child(1) {
-            transform: ${({ open }) => open ? 'rotate(45deg)' : 'rotate(0)'}
-        }
-
-        &:nth-child(2) {
-            transform: ${({ open }) => open ? 'translateX(100%)' : 'translateX(0)'};
-            opacity: ${({ open }) => open ? 0 : 1}
-        }
-
-        &:nth-child(3) {
-            transform: ${({ open }) => open ? 'rotate(-45deg)' : 'rotate(0)'}
-        }
-        }
+       }
     }
 
  `

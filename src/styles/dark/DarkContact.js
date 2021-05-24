@@ -37,9 +37,7 @@ justify-content: space-between;
     font-family: FontAwesome, 'Montserrat';
     border-radius: 6px;
 }
-.contact-footer {
-    margin: 0 20px 20px 20px;
-}
+
 .contact-text {
     color: white;
     font-size: 10px;
@@ -105,9 +103,11 @@ justify-content: space-between;
     font-family: FontAwesome, 'Montserrat';
     border-radius: 6px;
 }
+
 .contact-footer {
-    margin: 0 20px 20px 20px;
+    margin: 20px 0 20px 20px;
 }
+
 .contact-text {
     color: white;
     font-size: 10px;
@@ -138,7 +138,7 @@ justify-content: space-between;
     margin-top: 4px;
 }
 }
-@media only screen and (min-width: 600px) and (max-width: 1440px) {
+@media only screen and (min-width: 600px)  {
 display: flex;
 flex-direction: column;
 height: 100%;
@@ -170,12 +170,13 @@ justify-content: space-between;
     height: 25vh;
     max-height: 200px;
     font-size: 30px;
-    margin: 8px 0px 8px 8px;
+    margin: 8px 0px 8px 0px;
     font-family: FontAwesome, 'Montserrat';
     border-radius: 6px;
 }
+
 .contact-footer {
-    margin: 0 50px 50px 50px;
+    margin: 40px 0 40px 20px;
 }
 .contact-text {
     color: white;

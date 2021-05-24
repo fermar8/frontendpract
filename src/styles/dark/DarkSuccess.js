@@ -10,6 +10,7 @@ export const DarkSuccess = styled.div`
  .success-div {
      display: flex;
      height: 80vh;
+     font-size: 20px;
      flex-direction: column;
      margin: 0 20px 0 20px;
      justify-content: center;
@@ -28,5 +29,14 @@ export const DarkSuccess = styled.div`
      color: white;
      font-size: 10px;
  }
+
+@media only screen and (min-width: 1200px) {
+    .success-footer {
+        font-size: 15px;
+    }
+    .success-div {
+        font-size: 30px;
+    }
+}
 
 `

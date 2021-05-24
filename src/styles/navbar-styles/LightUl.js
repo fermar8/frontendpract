@@ -100,26 +100,18 @@ export const LightUl = styled.ul`
         height: 30px;
     }
     
-    .theme-option-light {
+    .theme-option {
         font-family: FontAwesome, 'Montserrat';
         color: #fafafa;
         background-color: black;
-        width: 200px;
+        width: 40px;
+        margin-left: 16px;
+        z-index: -1;
         height: 40px;
         border-radius: 20px;
-        font-size: 14px;
-
+        font-size: 18px;
     }
 
-    .theme-option-dark {
-        font-family: FontAwesome, 'Montserrat';
-        color: black;
-        background-color: #fafafa;
-        height: 40px;
-        border-radius: 20px;
-        width: 200px;
-        font-size: 14px;
-    }
 
 
 `

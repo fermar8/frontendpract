@@ -97,24 +97,16 @@ export const DarkUl = styled.ul`
         height: 30px;
     }
     
-    .theme-option-light {
-        font-family: FontAwesome, 'Montserrat';
-        color: black;
-        width: 200px;
-        background-color: white;
-        border-radius: 20px;
-        height: 40px;
-        font-size: 14px;
-    }
-
     .theme-option-dark {
         font-family: FontAwesome, 'Montserrat';
         color: black;
         background-color: #fafafa;
-        border-radius: 20px;
-        width: 200px;
+        width: 40px;
+        margin-left: 16px;
+        z-index: -1;
         height: 40px;
-        font-size: 14px;
+        border-radius: 20px;
+        font-size: 18px;
     }
 
 

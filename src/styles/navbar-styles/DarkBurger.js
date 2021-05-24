@@ -24,6 +24,7 @@ export const DarkBurger = styled.div `
     }
 
     div {
+        margin-top: 6px;
         width: 30px;
         height: 4px;
         background-color: ${({ open }) => open ? 'grey' : 'white'};

@@ -127,6 +127,20 @@ function Navbar (props) {
         theme = theme.light;
     };
 
+  function changeTheme () {
+      if (props.theme === "Light") {
+          props.handleSetTheme("Dark");
+      } else {
+          props.handleSetTheme("Light");
+      }
+  }
+
+  const icon = props.theme === "Light" ?                
+  <button className="theme-option" onClick={changeTheme}>&#xf186;</button>
+  :      
+  <button className="theme-option-dark" onClick={changeTheme}>&#xf185;</button>                
+
+
  //handle English buttons
     if (props.theme === 'Dark' && props.language === 'English') {
         engBtn = engBtn.darkEnglishSel;
@@ -213,10 +227,9 @@ function Navbar (props) {
 
                     
             
-                  {props.theme === 'Dark' ? 
-                  <button className="theme-option-dark" value="Light" onClick={e => props.handleSetTheme(e.target.value)}>{content.temaClar} &#xf185;</button>
-                : <button className="theme-option-light" value="Dark" onClick={e => props.handleSetTheme(e.target.value)}>{content.temaFosc} &#xf186;</button>}                
-
+                  <div>
+                    {icon}              
+                  </div>
                    
                 </div>
             

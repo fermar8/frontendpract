@@ -137,7 +137,6 @@ export const LightFooter = styled.div`
     .footer-text {
         font-size: 15px;
     }
-
     .footer-button {
         height: 70px;
         width: 380px;

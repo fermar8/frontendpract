@@ -1,6 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
+import  imgPastisseria  from '../images/image-1.png'
 
 
 import { DarkHome } from './../styles/dark/DarkHome';
@@ -143,11 +144,21 @@ function Home (props) {
               <theme.home>
               <Container fluid={true} >
               <Row noGutters={true} className="no-margin">
-              <Col xs="6" style={{padding: 0, margin: 0}}>
-                 <div id ="trigger-view" data-aos="zoom-in" className="left-div"><p className="text-left">HO</p></div>
+              <Col xs="12" xl="6" style={{padding: 0, margin: 0}}>
+                 <div id ="trigger-view" data-aos="zoom-in" className="left-div">
+                 <h1 className="title-left">Bienvenido a Online.com</h1>
+                 <p className="text-left">Online es una agencia digital y un joven estudio start up situado en Barcelona.</p> 
+                 <p className="text-left"> Podemos diseñar y programar tu web en pocos días y a un precio que se ajuste a tus necesidades.</p></div>
               </Col>
-              <Col xs="6" style={{padding: 0, margin: 0}}>
-                    <div id ="trigger-view" data-aos="zoom-in" className="right-div"><p className="text-right">LA</p></div>
+              <Col xs="12" xl="6" style={{padding: 0, margin: 0}}>
+                    <div id ="trigger-view" data-aos="zoom-in" className="right-div">
+                    <img className="img-pastisseria" src={imgPastisseria} alt="pastisseria"></img>
+                    <Link className="text-right-blue">Ver nuestros proyectos</Link>
+                    <p className="text-right">¿Necesitas crear tu página ya? Escríbenos y te responderemos antes de 24 horas.</p>
+                    <Link className="home-link" to={'/contact'}>
+                      <h1 className="footer-title"> {content.contact}</h1>
+                      </Link>
+                    </div>
               </Col>
               </Row> 
               </Container>

@@ -220,14 +220,11 @@ function Navbar (props) {
                     <Link className="links" to={'/contact'} onClick={() => setOpen(!open)}><li>{content.contacte}</li> </Link>
                     
                     <div className="row-div">
-                    <Link className="links" to={'/contact'} onClick={() => setOpen(!open)}><li className="portfoli">{content.portfoli}</li></Link>
-                    <p className="coming-soon">{content.proximament}</p>
+                    <Link className="links" to={'/portfolio'} onClick={() => setOpen(!open)}><li className="portfoli">{content.portfoli}</li></Link>
                     </div>
             
-
-                    
             
-                  <div>
+                  <div style={{marginTop: "8px"}}>
                     {icon}              
                   </div>
                    

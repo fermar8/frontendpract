@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Navbar from './components/Navbar'
 import { Switch,  Route } from 'react-router-dom';
 import Home from './pages/Home';
+import Portfolio from './pages/Portfolio';
 import Contact from './pages/Contact';
 import Success from './pages/Success';
 import { DarkBody } from './styles/dark/DarkBody';
@@ -48,6 +49,7 @@ if (theme === 'Dark') {
         <Switch>
           <Route exact path="/" render={(props) => <Home {...props} language={language} theme={theme} />} />
           <Route exact path="/contact" render={(props) => <Contact {...props} language={language} theme={theme} />} />
+          <Route exact path="/portfolio" render={(props) => <Portfolio {...props} language={language} theme={theme} />} />
           <Route exact path='/success' render={(props) => <Success {...props} language={language} theme={theme} />} />
         </Switch>
     </tema.body>

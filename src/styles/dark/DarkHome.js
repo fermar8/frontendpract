@@ -5,91 +5,93 @@ export const DarkHome = styled.div`
 @media only screen and (max-width: 320px) {
     
     .left-div {
-        font-family: Gilroy;
-        display: flex;
-        flex-direction: column;
-        text-align: right;
-        background-color: #881A9A;
-        justify-content: space-around;
-        border: none !important;
-        outline: none !important;
-        height: 100vh;
-        width: 100%;
-    }
+    font-family: Gilroy;
+    display: flex;
+    flex-direction: column;
+    background-color: #881A9A;
+    justify-content: center;
+    border: none !important;
+    outline: none !important;
+    height: 100vh;
+    width: 100%;
+}
+
+.right-div {
+    font-family: Gilroy;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    border: none !important;
+    outline: none !important;
+    height: 100vh;
+    width: 100%;
+}
+
+.title-left {
+    color: #fafafa;
+    margin: 0 40px 0 40px;
+    font-size: 26px;
+}
+
+.text-left {
+    font-family: "Montserrat";
+    color: #fafafa;
+    margin: 20px 40px 0 40px;
+    font-size: 16px;    
+}
+
+.img-pastisseria {
+    margin-top: 10px;
+    height: 50vh;
+    width: 70%;
+}
+
+.text-right-blue {
+    font-family: "Montserrat";
+    color: #881A9A;
+    font-size: 20px;
+    margin: 20px 0 20px 0;
+}
+
+.text-right {
+    font-family: "Montserrat";
+    color: #fafafa;
+    font-size: 16px;
+    margin: 20px 20px 20px 20px;
+}
+
+.home-link {
+    font-family: "Montserrat";
+    color: #fafafa;
+    font-size: 20px;
+}
+}
     
-    .right-div {
-        font-family: Gilroy;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        justify-content: space-around;
-        background-color: black;
-        border: none !important;
-        outline: none !important;
-        height:100vh;
-        width: 100%;
-    }
     
-    .text-left {
-        color: white;
-        font-size: 50px;    
-    }
+.title-left {
+    color: #fafafa;
+    margin: 10px 20px 0 20px;
+    font-size: 20px;
+}
+
+.text-left {
+    font-family: "Montserrat";
+    color: #fafafa;
+    margin: 20px 20px 0 20px;
+    font-size: 16px;    
+}
     
-    .text-right {
-        color: #881A9A;
-        font-size: 50px;
-    }
 }
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
     
     .left-div {
-        font-family: Gilroy;
-        display: flex;
-        flex-direction: column;
-        text-align: right;
-        background-color: #881A9A;
-        justify-content: space-around;
-        border: none !important;
-        outline: none !important;
-        height: 100vh;
-        width: 100%;
-    }
-    
-    .right-div {
-        font-family: Gilroy;
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        justify-content: space-around;
-        background-color: black;
-        border: none !important;
-        outline: none !important;
-        height: 100vh;
-        width: 100%;
-    }
-    
-    .text-left {
-        color: white;
-        font-size: 50px;    
-    }
-    
-    .text-right {
-        color: #881A9A;
-        font-size: 50px;
-    }
-    
-    }
-
-@media only screen and (min-width: 600px) and (max-width: 1024px) {
-
-.left-div {
     font-family: Gilroy;
     display: flex;
     flex-direction: column;
-    text-align: right;
     background-color: #881A9A;
-    justify-content: space-around;
+    justify-content: center;
     border: none !important;
     outline: none !important;
     height: 100vh;
@@ -100,8 +102,8 @@ export const DarkHome = styled.div`
     font-family: Gilroy;
     display: flex;
     flex-direction: column;
-    text-align: left;
-    justify-content: space-around;
+    text-align: center;
+    align-items: center;
     background-color: black;
     border: none !important;
     outline: none !important;
@@ -109,27 +111,54 @@ export const DarkHome = styled.div`
     width: 100%;
 }
 
+.title-left {
+    color: #fafafa;
+    margin: 0 40px 0 40px;
+    font-size: 30px;
+}
+
 .text-left {
-    color: white;
-    font-size: 150px;    
+    font-family: "Montserrat";
+    color: #fafafa;
+    margin: 20px 40px 0 40px;
+    font-size: 20px;    
+}
+
+.img-pastisseria {
+    margin-top: 20px;
+    height: 50vh;
+    width: 70%;
+}
+
+.text-right-blue {
+    font-family: "Montserrat";
+    color: #881A9A;
+    font-size: 20px;
+    margin: 20px 0 20px 0;
 }
 
 .text-right {
-    color: #881A9A;
-    font-size: 150px;
+    font-family: "Montserrat";
+    color: #fafafa;
+    font-size: 16px;
+    margin: 20px 20px 20px 20px;
 }
 
+.home-link {
+    font-family: "Montserrat";
+    color: #fafafa;
+    font-size: 26px;
+}
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 600px) and (max-width: 1200px) {
 
-.left-div {
+    .left-div {
     font-family: Gilroy;
     display: flex;
     flex-direction: column;
-    text-align: right;
     background-color: #881A9A;
-    justify-content: space-around;
+    justify-content: center;
     border: none !important;
     outline: none !important;
     height: 100vh;
@@ -140,8 +169,7 @@ export const DarkHome = styled.div`
     font-family: Gilroy;
     display: flex;
     flex-direction: column;
-    text-align: left;
-    justify-content: space-around;
+    align-items: center;
     background-color: black;
     border: none !important;
     outline: none !important;
@@ -149,16 +177,110 @@ export const DarkHome = styled.div`
     width: 100%;
 }
 
+.title-left {
+    color: #fafafa;
+    margin: 0 40px 0 40px;
+    font-size: 75px;
+}
+
 .text-left {
-    color: white;
-    font-size: 150px;    
+    font-family: "Montserrat";
+    color: #fafafa;
+    margin: 20px 40px 0 40px;
+    font-size: 20px;    
+}
+
+.img-pastisseria {
+    margin-top: 20px;
+    height: 60vh;
+    width: 60%;
+}
+
+.text-right-blue {
+    font-family: "Montserrat";
+    color: #881A9A;
+    font-size: 24px;
+    margin: 20px 0 20px 0;
 }
 
 .text-right {
-    color: #881A9A;
-    font-size: 150px;
+    font-family: "Montserrat";
+    color: #fafafa;
+    font-size: 20px;
+    margin: 20px 20px 20px 20px;
 }
 
+.home-link {
+    font-family: "Montserrat";
+    color: #fafafa;
+    font-size: 30px;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+
+.left-div {
+    font-family: Gilroy;
+    display: flex;
+    flex-direction: column;
+    background-color: #881A9A;
+    justify-content: center;
+    border: none !important;
+    outline: none !important;
+    height: 100vh;
+    width: 100%;
+}
+
+.right-div {
+    font-family: Gilroy;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    border: none !important;
+    outline: none !important;
+    height: 100vh;
+    width: 100%;
+}
+
+.title-left {
+    color: #fafafa;
+    margin: 0 40px 0 40px;
+    font-size: 75px;
+}
+
+.text-left {
+    font-family: "Montserrat";
+    color: #fafafa;
+    margin: 20px 40px 0 40px;
+    font-size: 20px;    
+}
+
+.img-pastisseria {
+    margin-top: 20px;
+    height: 50vh;
+    width: 70%;
+}
+
+.text-right-blue {
+    font-family: "Montserrat";
+    color: #881A9A;
+    font-size: 24px;
+    margin: 20px 0 20px 0;
+}
+
+.text-right {
+    font-family: "Montserrat";
+    color: #fafafa;
+    font-size: 20px;
+    margin: 20px 20px 20px 20px;
+}
+
+.home-link {
+    font-family: "Montserrat";
+    color: #fafafa;
+    font-size: 30px;
+}
 }
 }
     

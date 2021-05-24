@@ -21,7 +21,6 @@ export const LightHome = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
     background-color: #fafafa;
     border: none !important;
     outline: none !important;
@@ -43,6 +42,7 @@ export const LightHome = styled.div`
 }
 
 .img-pastisseria {
+    margin-top: 10px;
     height: 50vh;
     width: 70%;
 }
@@ -104,7 +104,6 @@ export const LightHome = styled.div`
     flex-direction: column;
     text-align: center;
     align-items: center;
-    margin-top: 20px;
     background-color: #fafafa;
     border: none !important;
     outline: none !important;
@@ -126,6 +125,7 @@ export const LightHome = styled.div`
 }
 
 .img-pastisseria {
+    margin-top: 20px;
     height: 50vh;
     width: 70%;
 }
@@ -170,7 +170,6 @@ export const LightHome = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
     background-color: #fafafa;
     border: none !important;
     outline: none !important;
@@ -192,6 +191,7 @@ export const LightHome = styled.div`
 }
 
 .img-pastisseria {
+    margin-top: 20px;
     height: 60vh;
     width: 60%;
 }
@@ -236,7 +236,6 @@ export const LightHome = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 20px;
     background-color: #fafafa;
     border: none !important;
     outline: none !important;
@@ -258,6 +257,7 @@ export const LightHome = styled.div`
 }
 
 .img-pastisseria {
+    margin-top: 20px;
     height: 50vh;
     width: 70%;
 }

@@ -153,7 +153,7 @@ function Home (props) {
               <Col xs="12" xl="6" style={{padding: 0, margin: 0}}>
                     <div id ="trigger-view" data-aos="zoom-in" className="right-div">
                     <img className="img-pastisseria" src={imgPastisseria} alt="pastisseria"></img>
-                    <Link className="text-right-blue">Ver nuestros proyectos</Link>
+                    <Link className="text-right-blue" to={'/portfoli'}>Ver nuestros proyectos</Link>
                     <p className="text-right">¿Necesitas crear tu página ya? Escríbenos y te responderemos antes de 24 horas.</p>
                     <Link className="home-link" to={'/contact'}>
                       <h1 className="footer-title"> {content.contact}</h1>

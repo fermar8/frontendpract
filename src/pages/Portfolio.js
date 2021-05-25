@@ -43,7 +43,7 @@ const [ isHovering4, setIsHovering4 ] = useState(false);
                 <Col xs="3" md="1"></Col>
                 <Col xs="6" md="4">
                 <div>
-                  {isHovering ? <Link to={'/contact'}><div className="hover-container" onMouseEnter={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)}>
+                  {isHovering ? <Link to={'/pastisseria'}><div className="hover-container" onMouseEnter={() => setIsHovering(true)} onMouseLeave={() => setIsHovering(false)}>
                   <img className="image-portfoli-hover" src={imgPastisseria} alt="pastis" ></img>
                   <div className="text-block">
                     <h4>Pastisseria</h4>

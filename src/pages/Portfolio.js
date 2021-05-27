@@ -81,7 +81,7 @@ if (props.language === 'Catalan') {
                 <Col xs="3" md="1"></Col>
                 <Col xs="6" md="4">
                 <div>
-                  {isHovering2 ? <Link to={'/contact'}><div className="hover-container" onMouseEnter={() => setIsHovering2(true)} onMouseLeave={() => setIsHovering2(false)}>
+                  {isHovering2 ? <Link to={'/pastisseria'}><div className="hover-container" onMouseEnter={() => setIsHovering2(true)} onMouseLeave={() => setIsHovering2(false)}>
                   <img className="image-portfoli-hover" src={imgPastisseria} alt="pastis" ></img>
                   <div className="text-block">
                     <h4>Pastisseria</h4>
@@ -97,7 +97,7 @@ if (props.language === 'Catalan') {
                 <Col xs="3" md="1"></Col>
                 <Col xs="6" md="4">
                 <div>
-                  {isHovering3 ? <Link to={'/contact'}><div className="hover-container" onMouseEnter={() => setIsHovering3(true)} onMouseLeave={() => setIsHovering3(false)}>
+                  {isHovering3 ? <Link to={'/pastisseria'}><div className="hover-container" onMouseEnter={() => setIsHovering3(true)} onMouseLeave={() => setIsHovering3(false)}>
                   <img className="image-portfoli-hover" src={imgPastisseria} alt="pastis" ></img>
                   <div className="text-block">
                     <h4>Pastisseria</h4>
@@ -113,7 +113,7 @@ if (props.language === 'Catalan') {
                 <Col xs="3" md="1"></Col>
                 <Col xs="6" md="4">
                 <div>
-                  {isHovering4 ? <Link to={'/contact'}><div className="hover-container" onMouseEnter={() => setIsHovering4(true)} onMouseLeave={() => setIsHovering4(false)}>
+                  {isHovering4 ? <Link to={'/pastisseria'}><div className="hover-container" onMouseEnter={() => setIsHovering4(true)} onMouseLeave={() => setIsHovering4(false)}>
                   <img className="image-portfoli-hover" src={imgPastisseria} alt="pastis" ></img>
                   <div className="text-block">
                     <h4>Pastisseria</h4>

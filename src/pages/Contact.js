@@ -139,9 +139,9 @@ function Contact (props) {
           <Col xs="0"></Col>
           <Col>
             <div className="contact-footer">
-                        <p className="contact-text">16 Place Cormontaigne, 59000 Lille France</p>
-                        <p className="contact-text">+33(0)3 20 88 11 59</p>
-                        <p className="contact-text">contact@wokine.com</p>
+                        <p className="contact-text">C/ Miquel Àngel </p>
+                        <p className="contact-text">690259***</p>
+                        <p className="contact-text">email@business.com</p>
             </div>
           </Col>
           <Col></Col>

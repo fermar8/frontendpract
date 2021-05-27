@@ -254,9 +254,9 @@ function Home (props) {
                   <Col xs="3" sm=""></Col>
                   <Col xs="6" sm="4" className="margin-top" style={{padding: 0, margin: 0}}>
                     <div className="footer-contact">
-                        <p className="footer-text">16 Place Cormontaigne, 59000 Lille France</p>
-                        <p className="footer-text">+33(0)3 20 88 11 59</p>
-                        <p className="footer-text">contact@wokine.com</p>
+                        <p className="footer-text">C/ Miquel Àngel </p>
+                        <p className="footer-text">690259***</p>
+                        <p className="footer-text">email@business.com</p>
                     </div>
                   </Col>
               </Row>

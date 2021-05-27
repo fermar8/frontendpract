@@ -131,7 +131,7 @@ export const DarkNav = styled.nav`
 
 @media only screen and (min-width: 1468px){
     width: 100%;
-    height: 55px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
 
@@ -141,9 +141,9 @@ export const DarkNav = styled.nav`
     .logo {
         font-family: Gilroy;
         margin-left: 10px;
-        margin-top: 12.5px;
+        margin-top: 15px;
         text-decoration: line-through;
-        font-size: 30px;
+        font-size: 40px;
         color: white;
     }
     .lang {

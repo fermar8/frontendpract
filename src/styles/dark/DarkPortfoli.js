@@ -1,6 +1,6 @@
 import styled from 'styled-components'; 
 
-export const LightPortfoli = styled.div`
+export const DarkPortfoli = styled.div`
 
 
 div {
@@ -9,6 +9,7 @@ div {
 
 h1 {
     font-family: "Gilroy"
+    color: #fafafa;
 }
 
 .hover-container {
@@ -48,6 +49,8 @@ h1 {
 
     h1 {
         font-size: 20px;
+        font-family: "Gilroy";
+        color: #fafafa;
     }
 
     .proyectos-title {
@@ -64,6 +67,8 @@ h1 {
 
 h1 {
         font-size: 20px;
+        font-family: "Gilroy";
+        color: #fafafa;
     }
 
     .proyectos-title {
@@ -78,6 +83,8 @@ h1 {
 
 h1 {
         font-size: 30px;
+        font-family: "Gilroy";
+        color: #fafafa;
     }
 }
 
@@ -88,6 +95,8 @@ h1 {
 
 h1 {
         font-size: 40px;
+        font-family: "Gilroy";
+        color: #fafafa;
     }
 }
 

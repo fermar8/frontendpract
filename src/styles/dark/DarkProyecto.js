@@ -1,6 +1,6 @@
 import styled from 'styled-components'; 
 
-export const LightProyecto = styled.div`
+export const DarkProyecto = styled.div`
 
 @media only screen and (max-width: 320px) {
     
@@ -8,7 +8,7 @@ export const LightProyecto = styled.div`
     font-family: Gilroy;
     display: flex;
     flex-direction: column;
-    background-color: #fafafa;
+    background-color: #0F0F0F;
     justify-content: center;
     border: none !important;
     outline: none !important;
@@ -22,7 +22,7 @@ export const LightProyecto = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fafafa;
+    background-color: #0F0F0F;
     border: none !important;
     outline: none !important;
     height: 100vh;
@@ -30,14 +30,14 @@ export const LightProyecto = styled.div`
 }
 
 .title-left {
-    color: #0F0F0F;
+    color: #fafafa;
     margin: 20px 40px 0 40px;
     font-size: 20px;
 }
 
 .text-left {
     font-family: "Montserrat";
-    color: #0F0F0F;
+    color: #fafafa;
     margin: 20px 40px 0 40px;
     font-size: 20px;    
 }
@@ -50,7 +50,7 @@ export const LightProyecto = styled.div`
 
 .text-left-link {
     font-family: "Montserrat";
-    color: #00929B;
+    color: #6816BA;
     margin: 20px 40px 0 40px;
     font-size: 20px; 
     text-decoration: none;
@@ -67,7 +67,7 @@ export const LightProyecto = styled.div`
     font-family: Gilroy;
     display: flex;
     flex-direction: column;
-    background-color: #fafafa;
+    background-color: #0F0F0F;
     justify-content: center;
     border: none !important;
     outline: none !important;
@@ -81,7 +81,7 @@ export const LightProyecto = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fafafa;
+    background-color: #0F0F0F;
     border: none !important;
     outline: none !important;
     height: 100vh;
@@ -89,14 +89,14 @@ export const LightProyecto = styled.div`
 }
 
 .title-left {
-    color: #0F0F0F;
+    color: #fafafa;
     margin: 20px 40px 0 40px;
     font-size: 30px;
 }
 
 .text-left {
     font-family: "Montserrat";
-    color: #0F0F0F;
+    color: #fafafa;
     margin: 20px 40px 0 40px;
     font-size: 20px;    
 }
@@ -109,7 +109,7 @@ export const LightProyecto = styled.div`
 
 .text-left-link {
     font-family: "Montserrat";
-    color: #00929B;
+    color: #6816BA;
     margin: 20px 40px 0 40px;
     font-size: 20px; 
     text-decoration: none;
@@ -125,7 +125,7 @@ export const LightProyecto = styled.div`
     font-family: Gilroy;
     display: flex;
     flex-direction: column;
-    background-color: #fafafa;
+    background-color: #0F0F0F;
     justify-content: center;
     border: none !important;
     outline: none !important;
@@ -139,7 +139,7 @@ export const LightProyecto = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fafafa;
+    background-color: #0F0F0F;
     border: none !important;
     outline: none !important;
     height: 100vh;
@@ -147,14 +147,14 @@ export const LightProyecto = styled.div`
 }
 
 .title-left {
-    color: #0F0F0F;
+    color: #fafafa;
     margin: 20px 40px 0 40px;
     font-size: 30px;
 }
 
 .text-left {
     font-family: "Montserrat";
-    color: #0F0F0F;
+    color: #fafafa;
     margin: 20px 40px 0 40px;
     font-size: 20px;    
 }
@@ -167,7 +167,7 @@ export const LightProyecto = styled.div`
 
 .text-left-link {
     font-family: "Montserrat";
-    color: #00929B;
+    color: #6816BA;
     margin: 20px 40px 0 40px;
     font-size: 20px; 
     text-decoration: none;
@@ -183,7 +183,7 @@ export const LightProyecto = styled.div`
     font-family: Gilroy;
     display: flex;
     flex-direction: column;
-    background-color: #fafafa;
+    background-color: #0F0F0F;
     justify-content: center;
     border: none !important;
     outline: none !important;
@@ -197,7 +197,7 @@ export const LightProyecto = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #fafafa;
+    background-color: #0F0F0F;
     border: none !important;
     outline: none !important;
     height: 100vh;
@@ -205,14 +205,14 @@ export const LightProyecto = styled.div`
 }
 
 .title-left {
-    color: #0F0F0F;
+    color: #fafafa;
     margin: 20px 40px 0 40px;
     font-size: 40px;
 }
 
 .text-left {
     font-family: "Montserrat";
-    color: #0F0F0F;
+    color: #fafafa;
     margin: 20px 40px 0 40px;
     font-size: 20px;    
 }
@@ -225,7 +225,7 @@ export const LightProyecto = styled.div`
 
 .text-left-link {
     font-family: "Montserrat";
-    color: #00929B;
+    color: #6816BA;
     margin: 20px 40px 0 40px;
     font-size: 20px; 
     text-decoration: none;

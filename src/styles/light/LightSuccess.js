@@ -18,13 +18,13 @@ export const LightSuccess = styled.div`
      align-items: center;
  }
  .success-text {
-     color: black;
+     color: #0F0F0F;
  }
  .success-contact {
      margin: 0 20px 20px 20px;
 }
  .success-footer {
-     color: black;
+     color: #0F0F0F;
      font-size: 10px;
  }
 `

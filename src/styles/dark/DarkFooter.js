@@ -15,7 +15,7 @@ export const DarkFooter = styled.div`
 }
 
 .footer-cont {
-    background-color: black;
+    background-color: #0F0F0F;
     height: 30vh;
 }
 
@@ -27,7 +27,7 @@ export const DarkFooter = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
+    background-color: #0F0F0F;
     font-family: Gilroy; 
     color: white;
     text-decoration: none;
@@ -37,8 +37,8 @@ export const DarkFooter = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border: 2px solid white;
-    background-color: black;
+    border: 2px solid #fafafa;
+    background-color: #0F0F0F;
     font-family: Gilroy; 
     color: white;
     margin-top: 12.5vh;

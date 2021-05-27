@@ -8,7 +8,7 @@ export const DarkHome = styled.div`
     font-family: Gilroy;
     display: flex;
     flex-direction: column;
-    background-color: #881A9A;
+    background-color: #6816BA;
     justify-content: center;
     border: none !important;
     outline: none !important;
@@ -21,7 +21,7 @@ export const DarkHome = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
+    background-color: #0F0F0F;
     border: none !important;
     outline: none !important;
     height: 100vh;
@@ -49,7 +49,7 @@ export const DarkHome = styled.div`
 
 .text-right-blue {
     font-family: "Montserrat";
-    color: #881A9A;
+    color: #6816BA;
     font-size: 20px;
     margin: 20px 0 20px 0;
 }
@@ -90,7 +90,7 @@ export const DarkHome = styled.div`
     font-family: Gilroy;
     display: flex;
     flex-direction: column;
-    background-color: #881A9A;
+    background-color: #6816BA;
     justify-content: center;
     border: none !important;
     outline: none !important;
@@ -104,7 +104,7 @@ export const DarkHome = styled.div`
     flex-direction: column;
     text-align: center;
     align-items: center;
-    background-color: black;
+    background-color: #0F0F0F;
     border: none !important;
     outline: none !important;
     height: 100vh;
@@ -132,7 +132,7 @@ export const DarkHome = styled.div`
 
 .text-right-blue {
     font-family: "Montserrat";
-    color: #881A9A;
+    color: #6816BA;
     font-size: 20px;
     margin: 20px 0 20px 0;
 }
@@ -157,7 +157,7 @@ export const DarkHome = styled.div`
     font-family: Gilroy;
     display: flex;
     flex-direction: column;
-    background-color: #881A9A;
+    background-color: #6816BA;
     justify-content: center;
     border: none !important;
     outline: none !important;
@@ -170,7 +170,7 @@ export const DarkHome = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
+    background-color: #0F0F0F;
     border: none !important;
     outline: none !important;
     height: 100vh;
@@ -198,7 +198,7 @@ export const DarkHome = styled.div`
 
 .text-right-blue {
     font-family: "Montserrat";
-    color: #881A9A;
+    color: #6816BA;
     font-size: 24px;
     margin: 20px 0 20px 0;
 }
@@ -223,7 +223,7 @@ export const DarkHome = styled.div`
     font-family: Gilroy;
     display: flex;
     flex-direction: column;
-    background-color: #881A9A;
+    background-color: #6816BA;
     justify-content: center;
     border: none !important;
     outline: none !important;
@@ -236,7 +236,7 @@ export const DarkHome = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: black;
+    background-color: #0F0F0F;
     border: none !important;
     outline: none !important;
     height: 100vh;
@@ -264,7 +264,7 @@ export const DarkHome = styled.div`
 
 .text-right-blue {
     font-family: "Montserrat";
-    color: #881A9A;
+    color: #6816BA;
     font-size: 24px;
     margin: 20px 0 20px 0;
 }
@@ -280,7 +280,6 @@ export const DarkHome = styled.div`
     font-family: "Montserrat";
     color: #fafafa;
     font-size: 30px;
-}
 }
 }
     

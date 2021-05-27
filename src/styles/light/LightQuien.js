@@ -75,10 +75,10 @@ export const LightQuien = styled.div`
 
 @media only screen and (min-width: 1468px){
     .quien-title {
-        font-size: 75px;
+        font-size: 40px;
     }
     .quien-text {
-        font-size: 40px;
+        font-size: 30px;
     }
 }
 

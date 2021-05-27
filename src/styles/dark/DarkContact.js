@@ -39,7 +39,7 @@ justify-content: space-between;
 }
 
 .contact-text {
-    color: white;
+    color: #fafafa;
     font-size: 10px;
 }
 .button-div {
@@ -57,9 +57,9 @@ justify-content: space-between;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
+    background-color: #0F0F0F;
     color: white;
-    border: 2px solid white;
+    border: 2px solid #fafafa;
     float: right;
     font-family: 'Gilroy';
     font-size: 20px;
@@ -80,7 +80,7 @@ justify-content: space-between;
     align-items: center;
 }
 .contact-title {
-    color: white;
+    color: #fafafa;
     margin-bottom: 10px;
     font-size: 30px;
     font-family: 'Gilroy';
@@ -109,7 +109,7 @@ justify-content: space-between;
 }
 
 .contact-text {
-    color: white;
+    color: #fafafa;
     font-size: 10px;
 }
 .button-div {
@@ -127,9 +127,9 @@ justify-content: space-between;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: black;
-    color: white;
-    border: 2px solid white;
+    background-color: #0F0F0F;
+    color: #fafafa;
+    border: 2px solid #fafafa;
     float: right;
     font-family: 'Gilroy';
     font-size: 30px;
@@ -179,7 +179,7 @@ justify-content: space-between;
     margin: 40px 0 40px 20px;
 }
 .contact-text {
-    color: white;
+    color: #fafafa;
     font-size: 15px;
 }
 .button-div {
@@ -197,9 +197,9 @@ justify-content: space-between;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-color: black;
-    color: white;
-    border: 2px solid white;
+    background-color: #0F0F0F;
+    color: #fafafa;
+    border: 2px solid #fafafa;
     float: right;
     font-family: 'Gilroy';
     font-size: 35px;

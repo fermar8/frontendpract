@@ -25,6 +25,13 @@ function Home (props) {
 
     let content = {
         Catalan: {
+            homeTitle: "Benvingut a Online.com",
+            homeText: "Online és una agència digital i un jove estudi start up situat a Barcelona.",
+            homeText2: "Podem disenyar i programar la teva web en pocs dies i a un preu que s'ajusti a les teves necessitats.",
+            homeProjectes: "Veure els nostres projectes",
+            homeCallToAction: "Necessites crear ja la teva pàgina? Escriu-nos i et contestarem en menys de 24 hores.",
+          
+
             quienTitle: 'Qui Som',
             quienText: 'Online és una agència digital i un jove estudi start up. Ens dediquem a la creació i programació de pàgines web funcionals i amb un disseny únic. La nostra passió per la tecnologia i per el disseny ens motiva a traballar dur cada dia.',
             
@@ -48,9 +55,16 @@ function Home (props) {
             markTextTwo: "Gestor De Comunitats",
             markTextThree: "Seguiment d'Esdeveniments",
 
+
             contact: "CONTACTA'NS"
         },
         Spanish: {
+            homeTitle: "Bienvenido a Online.com",
+            homeText: "Online es una agencia digital y un joven estudio start up situado en Barcelona. ",
+            homeText2: "Podemos diseñar y programar tu web en pocos días y a un precio que se ajuste a tus necesidades.",
+            homeProjectes: "Ver nuestros proyectos",
+            homeCallToAction: "¿Necesitas crear tu página ya? Escríbenos y te responderemos antes de 24 horas.",
+
             quienTitle: 'Quiénes Somos',
             quienText: 'Online es una agencia digital y un joven estudio start up. Nos dedicamos a la creación y programación de páginas web funcionales y con un diseño único. Nuestra pasión por la tecnología y por el diseño nos motiva a trabajar duro cada día.',
             
@@ -67,16 +81,23 @@ function Home (props) {
             devTitle: "Desarrollo",
             devTextOne: "Front y Back",
             devTextTwo: "Wordpress",
-            devTextThree: "Comercio Electrònico",
+            devTextThree: "Comercio Electrónico",
 
             markTitle: "Mercadotecnia Web",
             markTextOne: "Redes Sociales",
             markTextTwo: "Gestión de Comunidades",
             markTextThree: "Seguimiento de Eventos",
 
+
             contact: "CONTÁCTANOS"
         },
         English: {
+            homeTitle: "Welcome to Online.com",
+            homeText: "Online is a digital agency and a young startup based in Barcelona.",
+            homeText2: "We can design and develop your web in few days and at a price that matches your needs.",
+            homeProjectes: "See our projects",
+            homeCallToAction: "Do you need a web page? Contact us and we will get back to you in less than 24 hours.",
+
             quienTitle: 'About Us',
             quienText: 'Online is a digital agency and a young start up studio. Our services are the creation and programming of functional web pages with a unique design. Our passion for technology and design fuels us to work hard each and every day.',
 
@@ -146,15 +167,15 @@ function Home (props) {
               <Row noGutters={true} className="no-margin">
               <Col xs="12" xl="6" style={{padding: 0, margin: 0}}>
                  <div id ="trigger-view" data-aos="zoom-in" className="left-div">
-                 <h1 className="title-left">Bienvenido a Online.com</h1>
-                 <p className="text-left">Online es una agencia digital y un joven estudio start up situado en Barcelona.</p> 
-                 <p className="text-left"> Podemos diseñar y programar tu web en pocos días y a un precio que se ajuste a tus necesidades.</p></div>
+                 <h1 className="title-left">{content.homeTitle}</h1>
+                 <p className="text-left">{content.homeText}</p> 
+                 <p className="text-left"> {content.homeText2}</p></div>
               </Col>
               <Col xs="12" xl="6" style={{padding: 0, margin: 0}}>
                     <div id ="trigger-view" data-aos="zoom-in" className="right-div">
                     <img className="img-pastisseria" src={imgPastisseria} alt="pastisseria"></img>
-                    <Link className="text-right-blue" to={'/portfoli'}>Ver nuestros proyectos</Link>
-                    <p className="text-right">¿Necesitas crear tu página ya? Escríbenos y te responderemos antes de 24 horas.</p>
+                    <Link className="text-right-blue" to={'/portfolio'}>{content.homeProjectes}</Link>
+                    <p className="text-right">{content.homeCallToAction}</p>
                     <Link className="home-link" to={'/contact'}>
                       <h1 className="footer-title"> {content.contact}</h1>
                       </Link>

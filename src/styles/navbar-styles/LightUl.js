@@ -53,7 +53,7 @@ export const LightUl = styled.ul`
             }
 
             li {
-                color: black;
+                color: #0F0F0F;
                 margin: 10px 0 0 20px;
             }
 
@@ -72,7 +72,7 @@ export const LightUl = styled.ul`
 
             .coming-soon {
                 text-align: center;
-                color: black;
+                color: #0F0F0F;
                 margin: 50px 0 0 0;
                 font-size: 15px;
                 font-style: italic;
@@ -80,22 +80,22 @@ export const LightUl = styled.ul`
             }
 
 .contact-text {
-                color: black;
+                color: #0F0F0F;
                 font-size: 10px;
                 font-family: Montserrat;
                 text-align: left;
             }
 
 .language-choice {
-                color: black;
+                color: #0F0F0F;
             }
 
 .theme-select {
         font-family: FontAwesome, 'Montserrat';
         font-size: 14px;
         background-color: #fafafa;
-        color: black;
-        border: 2px solid black;
+        color: #0F0F0F;
+        border: 2px solid #0F0F0F;
         border-radius: 4px;
         height: 30px;
     }
@@ -103,7 +103,7 @@ export const LightUl = styled.ul`
     .theme-option {
         font-family: FontAwesome, 'Montserrat';
         color: #fafafa;
-        background-color: black;
+        background-color: #0F0F0F;
         width: 40px;
         margin-left: 16px;
         z-index: -1;

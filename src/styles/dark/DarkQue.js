@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const DarkQue = styled.div`
 
     .que-page {
-        background-color: black;
+        background-color: #0F0F0F;
         display: flex;
         flex-direction: column;
         justify-content: center;

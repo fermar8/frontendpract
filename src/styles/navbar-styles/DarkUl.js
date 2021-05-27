@@ -22,7 +22,7 @@ export const DarkUl = styled.ul`
         .columna-ul {
             height: 100vh;
             width: 100%;
-            background-color: black;
+            background-color: #0F0F0F;
         }
 
 
@@ -30,7 +30,7 @@ export const DarkUl = styled.ul`
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                background-color: black;
+                background-color: #0F0F0F;
                 height: 100vh;
                 width: 100vw;
             }
@@ -90,7 +90,7 @@ export const DarkUl = styled.ul`
 .theme-select {
         font-family: FontAwesome, 'Montserrat';
         font-size: 14px;
-        background-color: black;
+        background-color: #0F0F0F;
         color: white;
         border: 2px solid white;
         border-radius: 4px;
@@ -99,7 +99,7 @@ export const DarkUl = styled.ul`
     
     .theme-option-dark {
         font-family: FontAwesome, 'Montserrat';
-        color: black;
+        color: #0F0F0F;
         background-color: #fafafa;
         width: 40px;
         margin-left: 16px;

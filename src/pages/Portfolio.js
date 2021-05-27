@@ -3,6 +3,7 @@ import { Container, Row, Col } from 'reactstrap';
 import imgPastisseria from '../images/image-1.png';
 import { Link } from 'react-router-dom';
 import { LightPortfoli } from '../styles/light/LightPortfoli';
+import { DarkPortfoli } from '../styles/dark/DarkPortfoli';
 import { useState } from 'react';
 
 
@@ -13,9 +14,30 @@ const [ isHovering2, setIsHovering2 ] = useState(false);
 const [ isHovering3, setIsHovering3 ] = useState(false);
 const [ isHovering4, setIsHovering4 ] = useState(false);
 
+let content = {
+  spanish: {
+    titol: "Nuestros proyectos"
+
+  },
+  catalan: {
+    titol: "Els nostres projectes"
+  },
+  english : {
+    titol: "Our work"
+  }
+}
+
+if (props.language === 'Catalan') {
+  content = content.catalan;
+} else if (props.language === 'Spanish') {
+  content = content.spanish;
+} else {
+  content = content.english;
+};
+
     let theme = {
         dark: {
-            portfoli: LightPortfoli  
+            portfoli: DarkPortfoli  
         },
     
         light: {
@@ -35,7 +57,7 @@ const [ isHovering4, setIsHovering4 ] = useState(false);
         <Row style={{height: "10vh", marginTop: "20px"}}>
          <Col xs="3" md="1"></Col>
          <Col xs="6" md="8" className="proyectos-title">
-             <h1>Nuestros Proyectos</h1>
+             <h1>{content.titol}</h1>
          </Col>
          <Col xs="3" md="8"></Col>
         </Row>

@@ -31,7 +31,7 @@ export const LightFooter = styled.div`
     justify-content: space-between;
     background-color: #fafafa;
     font-family: Gilroy; 
-    color: black;
+    color: #0F0F0F;
     text-decoration: none;
 }
 
@@ -40,10 +40,10 @@ export const LightFooter = styled.div`
     align-items: center;
     margin-top: 12.5vh;
     justify-content: space-between;
-    border: 2px solid black;
+    border: 2px solid #0F0F0F;
     background-color: #fafafa;
     font-family: Gilroy; 
-    color: black;
+    color: #0F0F0F;
 }
 
 .footer-contact {
@@ -53,7 +53,7 @@ export const LightFooter = styled.div`
 }
 
 .footer-text {
-    color: black;  
+    color: #0F0F0F;  
 }
 
 @media only screen and (max-width: 576px) {

@@ -56,14 +56,14 @@ export const LightHome = styled.div`
 
 .text-right {
     font-family: "Montserrat";
-    color: black;
+    color: #0F0F0F;
     font-size: 16px;
     margin: 20px 20px 20px 20px;
 }
 
 .home-link {
     font-family: "Montserrat";
-    color: black;
+    color: #0F0F0F;
     font-size: 20px;
 }
 }
@@ -139,14 +139,14 @@ export const LightHome = styled.div`
 
 .text-right {
     font-family: "Montserrat";
-    color: black;
+    color: #0F0F0F;
     font-size: 16px;
     margin: 20px 20px 20px 20px;
 }
 
 .home-link {
     font-family: "Montserrat";
-    color: black;
+    color: #0F0F0F;
     font-size: 26px;
 }
 }
@@ -205,14 +205,14 @@ export const LightHome = styled.div`
 
 .text-right {
     font-family: "Montserrat";
-    color: black;
+    color: #0F0F0F;
     font-size: 20px;
     margin: 20px 20px 20px 20px;
 }
 
 .home-link {
     font-family: "Montserrat";
-    color: black;
+    color: #0F0F0F;
     font-size: 30px;
 }
 }
@@ -271,17 +271,17 @@ export const LightHome = styled.div`
 
 .text-right {
     font-family: "Montserrat";
-    color: black;
+    color: #0F0F0F;
     font-size: 20px;
     margin: 20px 20px 20px 20px;
 }
 
 .home-link {
     font-family: "Montserrat";
-    color: black;
+    color: #0F0F0F;
     font-size: 30px;
 }
 }
-}
+
     
  `

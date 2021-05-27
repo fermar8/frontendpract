@@ -6,7 +6,7 @@ width: 100%;
 height: 100%;
 display: flex;
 flex-direction: column;
-background-color: black;
+background-color: #0F0F0F;
 
 
 `

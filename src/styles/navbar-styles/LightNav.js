@@ -17,7 +17,7 @@ export const LightNav = styled.nav`
         margin-left: 10px;
         margin-top: 12.5px;
         font-size: 30px;
-        color: black;
+        color: #0F0F0F;
     }
 
     .lang {
@@ -42,12 +42,12 @@ export const LightNav = styled.nav`
         margin-top: 12.5px;
         text-decoration: line-through;
         font-size: 30px;
-        color: black;
+        color: #0F0F0F;
     }
     .lang {
         display: flex;
         justify-content: center;
-        color: black;
+        color: #0F0F0F;
         font-size: 20px;
         margin-top: 17.5px;
     }
@@ -68,12 +68,12 @@ export const LightNav = styled.nav`
         margin-top: 12.5px;
         text-decoration: line-through;
         font-size: 30px;
-        color: black;
+        color: #0F0F0F;
     }
     .lang {
         display: flex;
         justify-content: center;
-        color: black;
+        color: #0F0F0F;
         font-size: 20px;
         margin-top: 17.5px;
     }
@@ -94,12 +94,12 @@ export const LightNav = styled.nav`
         margin-top: 15px;
         text-decoration: line-through;
         font-size: 40px;
-        color: black;
+        color: #0F0F0F;
     }
     .lang {
         display: flex;
         justify-content: center;
-        color: black;
+        color: #0F0F0F;
         font-size: 30px;
         margin-top: 20px;
     }
@@ -120,12 +120,12 @@ export const LightNav = styled.nav`
         margin-top: 15px;
         text-decoration: line-through;
         font-size: 40px;
-        color: black;
+        color: #0F0F0F;
     }
     .lang {
         display: flex;
         justify-content: center;
-        color: black;
+        color: #0F0F0F;
         font-size: 30px;
         margin-top: 20px;
     }
@@ -133,7 +133,7 @@ export const LightNav = styled.nav`
 
 @media only screen and (min-width: 1468px){
     width: 100%;
-    height: 55px;
+    height: 70px;
     display: flex;
     justify-content: space-between;
 
@@ -143,15 +143,15 @@ export const LightNav = styled.nav`
     .logo {
         font-family: Gilroy;
         margin-left: 10px;
-        margin-top: 12.5px;
+        margin-top: 15px;
         text-decoration: line-through;
-        font-size: 30px;
-        color: black;
+        font-size: 40px;
+        color: #0F0F0F;
     }
     .lang {
         display: flex;
         justify-content: center;
-        color: black;
+        color: #0F0F0F;
         font-size: 30px;
         margin-top: 20px;
     }

@@ -43,7 +43,7 @@ justify-content: space-between;
     margin: 0 20px 20px 20px;
 }
 .contact-text {
-    color: black;
+    color: #0F0F0F;
     font-size: 10px;
 }
 
@@ -58,8 +58,8 @@ justify-content: space-between;
     align-items: center;
     justify-content: space-between;
     background-color: white;
-    color: black;
-    border: 2px solid black;
+    color: #0F0F0F;
+    border: 2px solid #0F0F0F;
     float: right;
     font-family: 'Gilroy';
     font-size: 20px;

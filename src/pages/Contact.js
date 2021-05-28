@@ -108,8 +108,10 @@ function Contact (props) {
       return(
        <Fragment>
         <theme.tema>
-        <Container>
+        <Container fluid={true} >
         <Row>
+        <Col xs="1"></Col>
+        <Col xs="10">
           <form className="contact-form" onSubmit={sendData} method="POST">
             <h1 className="contact-title">{content.contacta}</h1>
             <div className="fields-container">
@@ -132,6 +134,8 @@ function Contact (props) {
             <button type="submit" className="btn btn-primary"><h1 className="enviar-btn"> {content.enviar} </h1><MailOutlineIcon fontSize="large"/></button>
             </div>
           </form>
+          </Col>
+          <Col xs="1"></Col>
           </Row>
           </Container>
           <Container fluid={true}>

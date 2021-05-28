@@ -1,6 +1,6 @@
 import React from 'react'
 import { Container, Row, Col } from 'reactstrap';
-import imgPastisseria from '../images/image-1.png';
+import imgPastisseria from '../images/image-1.jpg';
 import { Link } from 'react-router-dom';
 import { LightPortfoli } from '../styles/light/LightPortfoli';
 import { DarkPortfoli } from '../styles/dark/DarkPortfoli';

@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'reactstrap';
-import  imgPastisseria  from '../images/image-1.png'
+import  imgPastisseria  from '../images/image-1.jpg'
 
 
 import { DarkHome } from './../styles/dark/DarkHome';

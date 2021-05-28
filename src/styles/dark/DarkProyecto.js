@@ -39,11 +39,11 @@ export const DarkProyecto = styled.div`
     font-family: "Montserrat";
     color: #fafafa;
     margin: 20px 40px 0 40px;
-    font-size: 20px;    
+    font-size: 16px;    
 }
 
 .img-pastisseria {
-   margin-top: 40px;
+   margin-top: 20px;
     height: 50vh;
     width: 70%;
 }
@@ -52,7 +52,7 @@ export const DarkProyecto = styled.div`
     font-family: "Montserrat";
     color: #6816BA;
     margin: 20px 40px 0 40px;
-    font-size: 20px; 
+    font-size: 16px; 
     text-decoration: none;
 }
 
@@ -91,18 +91,18 @@ export const DarkProyecto = styled.div`
 .title-left {
     color: #fafafa;
     margin: 20px 40px 0 40px;
-    font-size: 30px;
+    font-size: 24px;
 }
 
 .text-left {
     font-family: "Montserrat";
     color: #fafafa;
     margin: 20px 40px 0 40px;
-    font-size: 20px;    
+    font-size: 18px;    
 }
 
 .img-pastisseria {
-   margin-top: 40px;
+   margin-top: 20px;
     height: 50vh;
     width: 70%;
 }
@@ -111,7 +111,7 @@ export const DarkProyecto = styled.div`
     font-family: "Montserrat";
     color: #6816BA;
     margin: 20px 40px 0 40px;
-    font-size: 20px; 
+    font-size: 18px; 
     text-decoration: none;
 }
 

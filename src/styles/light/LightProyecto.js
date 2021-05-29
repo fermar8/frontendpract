@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const LightProyecto = styled.div`
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 360px) {
     
     .left-div {
     font-family: Gilroy;
@@ -32,14 +32,14 @@ export const LightProyecto = styled.div`
 .title-left {
     color: #0F0F0F;
     margin: 20px 40px 0 40px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .text-left {
     font-family: "Montserrat";
     color: #0F0F0F;
     margin: 20px 40px 0 40px;
-    font-size: 16px;    
+    font-size: 14px;    
 }
 
 .img-pastisseria {
@@ -52,7 +52,7 @@ export const LightProyecto = styled.div`
     font-family: "Montserrat";
     color: #00929B;
     margin: 20px 40px 0 40px;
-    font-size: 16px; 
+    font-size: 14px; 
     text-decoration: none;
 }
 
@@ -61,7 +61,7 @@ export const LightProyecto = styled.div`
     
 }
 
-@media only screen and (min-width: 320px) and (max-width: 600px) {
+@media only screen and (min-width: 360px) and (max-width: 600px) {
     
     .left-div {
     font-family: Gilroy;

@@ -6,8 +6,10 @@ import Portfolio from './pages/Portfolio';
 import Pastisseria from './pages/Pastisseria';
 import Contact from './pages/Contact';
 import Success from './pages/Success';
+import  ScrollToTop  from './components/ScrollToTop';
 import { DarkBody } from './styles/dark/DarkBody';
 import { LightBody } from './styles/light/LightBody';
+
 import './App.css';
 
 function App() {
@@ -36,6 +38,7 @@ if (theme === 'Dark') {
 
   return (
     <tema.body>
+        <ScrollToTop />
         <Navbar language={language}
                 handleSetLanguage={language => {setLanguage(language);
                 storeLanguageInLocalStorage(language);
